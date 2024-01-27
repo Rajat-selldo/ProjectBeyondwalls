@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [com.beyondwalls]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test Demo(failed)">
+    <classes>
+      <class name="walkinactions.addwalkin">
+        <methods>
+          <include name="terminate"/>
+          <include name="walkin"/>
+          <include name="browserConfig"/>
+        </methods>
+      </class> <!-- walkinactions.addwalkin -->
+    </classes>
+  </test> <!-- Test Demo(failed) -->
+</suite> <!-- Failed suite [com.beyondwalls] -->
