@@ -6,10 +6,10 @@ import java.util.Date;
 import org.apache.commons.lang.RandomStringUtils;
 
 public class dateFormatMethod {
-	
+
 //Method for Date, Month & Year selection 
 	protected static String getDate(long a, String of) {
-		 
+
 		String s = "";
 		switch (of) {
 		case "D":
@@ -19,23 +19,22 @@ public class dateFormatMethod {
 			s = new SimpleDateFormat("M").format(new Date().getTime() + (a * (1000 * 60 * 60 * 24)));
 			break;
 		case "Y":
-			s = new SimpleDateFormat("YYYY").format(new Date().getTime() + (a * (1000 * 60 * 60 * 24 )));
+			s = new SimpleDateFormat("YYYY").format(new Date().getTime() + (a * (1000 * 60 * 60 * 24)));
 			break;
 		case "m":
-			s = new SimpleDateFormat("mm").format(new Date().getTime() + (a * (1000 * 60 )));
+			s = new SimpleDateFormat("mm").format(new Date().getTime() + (a * (1000 * 60)));
 			break;
 		case "H":
-			s = new SimpleDateFormat("hh").format(new Date().getTime() + (a * (1000 * 60 * 60 )));
+			s = new SimpleDateFormat("hh").format(new Date().getTime() + (a * (1000 * 60 * 60)));
 			break;
- 
+
 		default:
 			System.out.println("please select valid input");
 			break;
 		}
 		return s;
 	}
-	
-	
+
 //Method for random phone number generation 	
 	public String randomPhone() {
 		return " 12345" + Random("N", 5);
@@ -63,15 +62,13 @@ public class dateFormatMethod {
 		return Return;
 	}
 
-	//Main method to selection of date/phone/email 
+	// Main method to selection of date/phone/email
 	public static void main(String[] args) {
 //			System.out.println(""+ getDate(600, "Y"));
-		
+
 		System.out.println(Random("N", 1000));
 	}
-	
-	
-	//*[@id="add-new-lead-form"]/div[3]/div/div/div/div[1] --> click
-	
+
+	// *[@id="add-new-lead-form"]/div[3]/div/div/div/div[1] --> click
 
 }
