@@ -109,6 +109,10 @@
 			<artifactId>commons-beanutils</artifactId>
 			<version>1.9.3</version>
 		</dependency>
+<<<<<<< HEAD
+=======
+	
+>>>>>>> branch 'master' of https://github.com/Rajat-selldo/ProjectBeyondwalls.git
 	</dependencies>
 	<build>
 		<pluginManagement>

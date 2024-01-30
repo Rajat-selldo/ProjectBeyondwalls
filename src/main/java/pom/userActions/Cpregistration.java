@@ -357,5 +357,8 @@ public class Cpregistration extends ReusableUtils {
 		waitUntilClickable(clickonConfirmation).click();
 		wait(2000);
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'master' of https://github.com/Rajat-selldo/ProjectBeyondwalls.git
 }
