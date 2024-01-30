@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScripts.RechargeWallet">
+      <class name="testScripts.CPuserRegistration">
         <methods>
+          <include name="cpOnboardingwithNew"/>
           <include name="terminate"/>
           <include name="browserConfig"/>
-          <include name="TC01"/>
         </methods>
-      </class> <!-- testScripts.RechargeWallet -->
+      </class> <!-- testScripts.CPuserRegistration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
