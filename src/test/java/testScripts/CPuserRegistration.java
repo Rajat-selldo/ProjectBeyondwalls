@@ -2,7 +2,6 @@ package testScripts;
 
 import java.io.IOException;
 
-import org.sikuli.script.FindFailed;
 import org.testng.annotations.Test;
 
 import pom.beyondwalls.utility.BaseTest;
@@ -50,7 +49,7 @@ public class CPuserRegistration extends BaseTest {
 	}
 
 	@Test
-	public void cpOnboardingwithNew() throws InterruptedException, IOException, FindFailed {
+	public void cpOnboardingwithNew() throws InterruptedException, IOException {
 //Run login with same signed up CP user then run the following script 
 		cpRegistration();
 		logIn();
@@ -94,7 +93,10 @@ public class CPuserRegistration extends BaseTest {
 		register.clickonSave();
 
 		// Upload Documents
-		register.uploads(); // System.getProperty("user.dir")+
+		register.clickonUpload();
+		register.submitApplication();
+		register.clickonConfirmation();
+	//	register.uploads(); 
 	}
 
 }

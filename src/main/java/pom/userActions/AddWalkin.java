@@ -209,6 +209,4 @@ public class AddWalkin extends ReusableUtils {
 		waitUntilClickable(clickOnAdd).click();
 	}
 
-
-
 }

@@ -31,9 +31,9 @@ public class WalletRecharge extends ReusableUtils {
 	@FindBy(how = How.XPATH, using = "(//a[contains(text(), 'Recharge Wallet')])[1]")
 	private WebElement clickonRechargeWallet;
 	
-	@FindBy(how = How.CSS, using = "")
+	@FindBy(how = How.XPATH, using = "((//form[@id='wallet_receipt_form']/div)[1]/div/div)[1]")
 	private WebElement selectPaymentMode;
-	//If Cheques mode selected, then following 4-fields XPaths are used 
+			//If Cheques mode selected, then following 4-fields XPaths are used 
 	@FindBy(how = How.XPATH, using = "//input[@id='basic_receipt_wallet_receipt_issuing_bank']")
 	private WebElement enterIssuingBank;
 	
@@ -119,6 +119,9 @@ public class WalletRecharge extends ReusableUtils {
 	@FindBy(how = How.XPATH, using = "//input[@type='radio' and @value='true']") //use 'false' in value tag 
 	private WebElement selectInsuffucientBalance;
 	
+	@FindBy(how = How.XPATH, using = "(//div[contains(text(), 'Netbanking')])[2]")
+	private WebElement selectNetbanking;
+	
 	
 	
 //1. Recharge Wallet 
@@ -135,10 +138,14 @@ public class WalletRecharge extends ReusableUtils {
 	}
 	
 	public void selectPaymentMode(String enterModeName) {
-		waitUntilVisiblity(selectPaymentMode).clear();
 		wait(2000);
-		waitUntilVisiblity(selectPaymentMode).sendKeys(enterModeName);
-		selectPaymentMode.click();
+		waitUntilVisiblity(selectPaymentMode).click();
+		wait(2000);
+		selectPaymentMode.sendKeys(Keys.ENTER);
+//		waitUntilVisiblity(selectPaymentMode).sendKeys(enterModeName);
+//		wait(2000);
+		wait(2000);
+//		selectPaymentMode.click();
 	}
 	
 	public void enterIssuingBank(String enterBankName) {

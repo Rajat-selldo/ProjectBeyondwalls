@@ -66,7 +66,8 @@ public class LoginPage extends ReusableUtils {
 	}
 
 	public void clickonGetOtp() {
-		waitUntilClickable(clickonGetOtp).click();
+		moveToElementClick(clickonGetOtp);
+		wait(2000);
 	}
 
 	public void enterUserOtp(String Otp) {

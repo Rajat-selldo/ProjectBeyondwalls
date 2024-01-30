@@ -10,6 +10,8 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 import org.apache.commons.configuration2.Configuration;
@@ -25,6 +27,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -55,34 +58,34 @@ public class BaseTest {
 		// -------------------WebDriver-------------------//
 
 		if (browser.equalsIgnoreCase("chrome")) {
-//			ChromeOptions options = new ChromeOptions();
-//			// ================Add Extension==========
-//			// options.addExtensions(new File(System.getProperty("user.dir")
-//			// +"/AdBlock-—-best-ad-blocker.crx"));
-//		//	options.addExtensions(new File(System.getProperty("user.dir") + "/When-the-Night-Falls-1;-rainbow;-1080p.crx"));
-// 
-//			// ================To disable Automation name==========
-//			options.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
-//			// ================To disable notification popup========
-//			options.addArguments("--disable-notifications");
-//			// ================disable save password===============
+			ChromeOptions options = new ChromeOptions();
+			// ================ Zoom =================
+			options.addArguments("force-device-scale-factor=0.75");
+			options.addArguments("high-dpi-support=0.75");
+			// ================Add Extension==========
+			// options.addExtensions(new File(System.getProperty("user.dir") +
+			// "/Extensions/AdBlock.crx"));
+			// ================To disable Automation name==========
+			options.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
+			// ================To disble notification popup========
+			options.addArguments("--disable-notifications");
+			// ================disable save password===============
 //			options.addArguments("--start-maximized");
 //			options.addArguments("--disable-web-security");
 //			options.addArguments("--no-proxy-server");
 //			Map<String, Object> p = new HashMap<String, Object>();
 //			p.put("credentials_enable_service", false);
 //			p.put("profile.password_manager_enabled", false);
+//			// ================Set Download Location Config ================
+//			p.put("profile.default_content_settings.popups", 0);
+//			p.put("download.prompt_for_download", "true");
+//			p.put("download.default_directory", System.getProperty("user.dir") + "/Downloads");
 //			options.setExperimentalOption("prefs", p);
-//			// =================Dark Mode =========================
-//			options.addArguments("--force-dark-mode");
-//			// ===============WebDriver=================//
-//			options.addArguments("window-position=2000,0");
-			//WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
- 
-		
-			
-			
+			// =================Dark Mode =========================
+			options.addArguments("--force-dark-mode");
+			// ===============WebDriver=================//
+			// options.addArguments("window-position=2000,0");
+			driver = new ChromeDriver(options);
 		} else if (browser.equalsIgnoreCase("firefoxdriver")) {
 
 			WebDriverManager.firefoxdriver().setup();

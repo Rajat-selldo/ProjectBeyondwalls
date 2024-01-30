@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="TestSuite001">
-  <test thread-count="5" name="Test001">
+<suite name="SuiteSanity1">
+  <test thread-count="5" name="Test">
     <classes>
-      <class name="testScripts.CPuserRegistration"/>
+	  <class name="testScripts.AddUsers"/>
       <class name="testScripts.UserLogin"/>
-      <class name="testScripts.SuiteOne"/>
+      <class name="testScripts.CPuserRegistration"/>
       <class name="testScripts.DsmActions"/>
-      <class name="testScripts.CphActions"/>
-      <class name="testScripts.FiltersonProjectPage"/>
-      <class name="testScripts.FiltersonWalkinPage"/>
       <class name="testScripts.FiltersonBookingPage"/>
-      <class name="testScripts.FiltersonBrokeragePage"/>
-      <class name="testScripts.AddNewProject"/>
-      <class name="testScripts.AddUsers"/>
-      <class name="testScripts.AddBrokerageScheme"/>
+      <class name="testScripts.FiltersonProjectPage"/>
       <class name="testScripts.RechargeWallet"/>
+      <class name="testScripts.SuiteOne"/>
+      <class name="testScripts.FiltersonBrokeragePage"/>
+      <class name="testScripts.CPuserRegistration2_Delete"/>
+      <class name="testScripts.CphActions"/>
+      <class name="testScripts.AddBrokerageScheme"/>
+      <class name="testScripts.FiltersonWalkinPage"/>
+      <class name="testScripts.AddNewProject"/>
     </classes>
-  </test> <!-- Test001 -->
-</suite> <!-- TestSuite001 -->
+  </test> <!-- Test -->
+</suite> <!-- SuiteSanity1 -->

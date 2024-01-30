@@ -19,7 +19,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.15.0</version>
+			<version>4.17.0</version>
 		</dependency>
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
@@ -29,7 +29,7 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.7.1</version>
+			<version>7.9.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
@@ -96,7 +96,7 @@
 		<dependency>
 			<groupId>com.github.javafaker</groupId>
 			<artifactId>javafaker</artifactId>
-			<version>0.2</version>
+			<version>1.0.2</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-configuration2 -->
 		<dependency>
@@ -108,26 +108,6 @@
 			<groupId>commons-beanutils</groupId>
 			<artifactId>commons-beanutils</artifactId>
 			<version>1.9.3</version>
-		</dependency>
-		<dependency>
-    		<groupId>org.sikuli</groupId>
-    		<artifactId>sikuli-api</artifactId>
-   			 <version>1.2.0</version>
-		</dependency>
-		<dependency>
-    		<groupId>org.sikuli</groupId>
-    		<artifactId>sikuli-webdriver</artifactId>
-    		<version>1.0.1</version>
-		</dependency>
-		<dependency>
-    		<groupId>org.sikuli</groupId>
-    		<artifactId>sikuli-script</artifactId>
-    		<version>1.0.0</version>
-		</dependency>
-		<dependency>
-   			 <groupId>com.sikulix</groupId>
-   			 <artifactId>sikulixapi</artifactId>
-    		<version>1.1.0</version>
 		</dependency>
 	</dependencies>
 	<build>

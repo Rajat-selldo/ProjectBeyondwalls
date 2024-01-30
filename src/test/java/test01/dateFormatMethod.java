@@ -3,8 +3,6 @@ package test01;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.apache.commons.lang.RandomStringUtils;
-
 public class dateFormatMethod {
 	
 //Method for Date, Month & Year selection 
@@ -37,37 +35,37 @@ public class dateFormatMethod {
 	
 	
 //Method for random phone number generation 	
-	public String randomPhone() {
-		return " 12345" + Random("N", 5);
-	}
+//	public String randomPhone() {
+//		return " 12345" + Random("N", 5);
+//	}
 
 //Method for random email generation 
-	public static String Random(String type, int size) {
-		String Return = "";
-		switch (type) {
-		case "AN":
-			Return = RandomStringUtils.randomAlphanumeric(size);
-			break;// pX4Mv3KsJU
-		case "A":
-			Return = RandomStringUtils.randomAlphabetic(size);
-			break;// ZLTRqGyuXk
-		case "R":
-			Return = RandomStringUtils.random(size);
-			break;// 嚰险걻鯨贚䵧縓
-		case "N":
-			Return = RandomStringUtils.randomNumeric(size);
-			break;// 3511779161
-		default:
-			break;
-		}
-		return Return;
-	}
+//	public static String Random(String type, int size) {
+//		String Return = "";
+//		switch (type) {
+//		case "AN":
+//			Return = RandomStringUtils.randomAlphanumeric(size);
+//			break;// pX4Mv3KsJU
+//		case "A":
+//			Return = RandomStringUtils.randomAlphabetic(size);
+//			break;// ZLTRqGyuXk
+//		case "R":
+//			Return = RandomStringUtils.random(size);
+//			break;// 嚰险걻鯨贚䵧縓
+//		case "N":
+//			Return = RandomStringUtils.randomNumeric(size);
+//			break;// 3511779161
+//		default:
+//			break;
+//		}
+//		return Return;
+//	}
 
 	//Main method to selection of date/phone/email 
 	public static void main(String[] args) {
 //			System.out.println(""+ getDate(600, "Y"));
 		
-		System.out.println(Random("N", 1000));
+//		System.out.println(Random("N", 1000));
 	}
 	
 	

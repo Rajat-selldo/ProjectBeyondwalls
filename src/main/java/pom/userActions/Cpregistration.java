@@ -8,9 +8,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-import org.sikuli.script.FindFailed;
-import org.sikuli.script.Pattern;
-import org.sikuli.script.Screen;
 
 import pom.beyondwalls.utility.ReusableUtils;
 
@@ -95,7 +92,7 @@ public class Cpregistration extends ReusableUtils {
 	@FindBy(how = How.XPATH, using = "//input[@id='channel_partner_manager_id-selectized']")
 	private WebElement selectManager;
 
-	@FindBy(how = How.XPATH, using = "//input[@value='Save']")
+	@FindBy(how = How.CSS, using = "input[name='commit']")
 	private WebElement clickonSave;
 
 //Company Details Form 	
@@ -138,8 +135,8 @@ public class Cpregistration extends ReusableUtils {
 	@FindBy(how = How.XPATH, using = "(//div[contains(text(), 'PAN Card')])[1]")
 	private WebElement clickonDropdown;
 
-	@FindBy(how = How.XPATH, using = "//input[@class='btn btn-primary fileupload']")
-	private WebElement clickonUpload; // span[contains(text(), 'Upload')]
+	@FindBy(how = How.XPATH, using = "//input[@name='files[]']")	//input[name='files[]']
+	private WebElement clickonUpload; 
 
 	@FindBy(how = How.XPATH, using = "//a[contains(text(), 'Submit Application')]")
 	private WebElement submitApplication;
@@ -198,17 +195,18 @@ public class Cpregistration extends ReusableUtils {
 
 //CPONBOARDING FLOW with Existing Company 
 	public void clickoncompanyName(String cpFirmName) {
-		wait(2000);
+		wait(1000);
 		jsClick(clickoncompanyName1);
 		clickoncompanyName1.sendKeys(cpFirmName);
 		wait(1000);
 		clickoncompanyName1.sendKeys(Keys.ENTER);
-		wait(2000);
+		wait(1000);
 	}
 
 	public void clickonProceed() {
+		scrollIntoView(clickonProceed);
 		jsClick(clickonProceed);
-		wait(3000);
+		wait(2000);
 	}
 
 //CPONBOARDING FLOW with New Company 
@@ -266,6 +264,7 @@ public class Cpregistration extends ReusableUtils {
 	}
 
 	public void clickonSave() {
+		scrollIntoView(clickonSave);
 		jsClick(clickonSave);
 		wait(2000);
 	}
@@ -333,7 +332,13 @@ public class Cpregistration extends ReusableUtils {
 	}
 
 	public void clickonUpload() {
-		waitUntilClickable(clickonUpload).click();
+		wait(5000);
+		scrollIntoView(clickonUpload);
+		wait(2000);
+		waitUntilVisiblity(clickonUpload).sendKeys(System.getProperty("user.dir") + "\\com.beyondwalls\\Test Documents\\bld2.jpg");
+		wait(2000);
+		driver.navigate().refresh();
+		wait(3000);
 	}
 
 	public void uploads() {
@@ -343,6 +348,7 @@ public class Cpregistration extends ReusableUtils {
 	}
 
 	public void submitApplication() {
+		wait(2000);
 		waitUntilVisiblity(submitApplication).click();
 		wait(2000);
 	}
@@ -352,13 +358,4 @@ public class Cpregistration extends ReusableUtils {
 		wait(2000);
 	}
 
-	public void sikuliLocalFileUpload() throws FindFailed {
-		Pattern FileNameInput = new Pattern("D:\\BW Automation\\Sikuli\\FileUpload.png");
-		Pattern OpenButton = new Pattern("D:\\BW Automation\\Sikuli\\OpenButton.png");
-
-		Screen screen = new Screen();
-		screen.type(FileNameInput, "D:\\rajat\\Test Files\\bld2.jpg");
-		wait(2000);
-		screen.click(OpenButton);
-	}
 }

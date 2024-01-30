@@ -8,23 +8,26 @@ import pom.userActions.WalletRecharge;
 
 public class RechargeWallet extends BaseTest {
 
+	public void logIn() {
+		// Login with Administrator user
+				LoginPage userCreds = new LoginPage(driver);
+				userCreds.clickonSignIn();
+				userCreds.enterUserPhone("+919090909091");
+				userCreds.clickonGetOtp();
+				userCreds.enterUserOtp("000000");
+				userCreds.clickonverify();
+				System.out.println("User logged in successfully with Phone + OTP.");
+	}
+	
 	@Test
 	public void TC01() {
 //1. Recharge Wallet 
-		// Login with Administrator user
-		LoginPage userCreds = new LoginPage(driver);
-		userCreds.clickonSignIn();
-		userCreds.enterUserPhone("+919090909091");
-		userCreds.clickonGetOtp();
-		userCreds.enterUserOtp("000000");
-		userCreds.clickonverify();
-		System.out.println("User logged in successfully with Phone + OTP.");
-
+		logIn();
 		WalletRecharge recharge = new WalletRecharge(driver);
 		recharge.clickonProjects();
 		recharge.clickonEllipsis();
 		recharge.clickonRechargeWallet();
-		//recharge.selectPaymentMode("Online");
+		recharge.selectPaymentMode("Online");
 		recharge.enterCampaignFrom("01/02/2040");
 		recharge.enterCampaignTo("02/02/2040");
 		recharge.enterSvCount("1");
@@ -39,14 +42,7 @@ public class RechargeWallet extends BaseTest {
 	@Test
 	public void TC02() throws InterruptedException {
 //2. Transfer Wallet Balance
-		LoginPage userCreds = new LoginPage(driver);
-		userCreds.clickonSignIn();
-		userCreds.enterUserPhone("+919090909091");
-		userCreds.clickonGetOtp();
-		userCreds.enterUserOtp("000000");
-		userCreds.clickonverify();
-		System.out.println("User logged in successfully with Phone + OTP.");
-		
+		logIn();
 		WalletRecharge recharge = new WalletRecharge(driver);
 		recharge.clickonProjects();
 		recharge.clickonEllipsis();
@@ -59,14 +55,7 @@ public class RechargeWallet extends BaseTest {
 	
 	public void TC03() {
 //3. Edit incentives 
-		LoginPage userCreds = new LoginPage(driver);
-		userCreds.clickonSignIn();
-		userCreds.enterUserPhone("+919090909091");
-		userCreds.clickonGetOtp();
-		userCreds.enterUserOtp("000000");
-		userCreds.clickonverify();
-		System.out.println("User logged in successfully with Phone + OTP.");
-		
+		logIn();
 		WalletRecharge recharge = new WalletRecharge(driver);
 		recharge.clickonProjects();
 		recharge.clickonEllipsis();
@@ -80,14 +69,7 @@ public class RechargeWallet extends BaseTest {
 	
 	public void TC04() {
 //4. Edit Project 
-		LoginPage userCreds = new LoginPage(driver);
-		userCreds.clickonSignIn();
-		userCreds.enterUserPhone("+919090909091");
-		userCreds.clickonGetOtp();
-		userCreds.enterUserOtp("000000");
-		userCreds.clickonverify();
-		System.out.println("User logged in successfully with Phone + OTP.");
-		
+		logIn();
 		WalletRecharge recharge = new WalletRecharge(driver);
 		recharge.clickonProjects();
 		recharge.clickonEllipsis();
