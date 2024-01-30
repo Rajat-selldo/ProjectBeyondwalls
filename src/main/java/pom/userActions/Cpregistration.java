@@ -332,7 +332,7 @@ public class Cpregistration extends ReusableUtils {
 	}
 
 	public void clickonUpload() {
-		wait(5000);
+		wait(4000);
 		scrollIntoView(clickonUpload);
 		wait(2000);
 		waitUntilVisiblity(clickonUpload).sendKeys(System.getProperty("user.dir") + "\\com.beyondwalls\\Test Documents\\bld2.jpg");
