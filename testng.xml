@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="SuiteSanity1">
+<suite name="SanitySuite01">
 	<listeners>
-		<listener class-name="pom.beyondwalls.utility.Listneers"></listener>
-		<listener class-name="pom.beyondwalls.utility.AnnotationTransformer"></listener>
+		<listener class-name="pom.beyondwalls.Utility.Listneers"></listener>
+		<listener class-name="pom.beyondwalls.Utility.AnnotationTransformer"></listener>
 	</listeners>
-  <test thread-count="5" name="Test">
-    <classes>
-	  <class name="testScripts.AddUsers"/>
-      <class name="testScripts.UserLogin"/>
-      <class name="testScripts.CPuserRegistration"/>
-      <class name="testScripts.DsmActions"/>
-      <class name="testScripts.FiltersonBookingPage"/>
-      <class name="testScripts.FiltersonProjectPage"/>
-      <class name="testScripts.RechargeWallet"/>
-      <class name="testScripts.SuiteOne"/>
-      <class name="testScripts.FiltersonBrokeragePage"/>
-      <class name="testScripts.CPuserRegistration2_Delete"/>
-      <class name="testScripts.CphActions"/>
-      <class name="testScripts.AddBrokerageScheme"/>
-      <class name="testScripts.FiltersonWalkinPage"/>
-      <class name="testScripts.AddNewProject"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- SuiteSanity1 -->
+	<test thread-count="5" name="SanityTest">
+		<classes>
+			<class name="testScripts.UserLogin" />
+			<class name="testScripts.CPuserRegistration" />
+			<class name="testScripts.SuiteOne" />
+			<class name="testScripts.DsmActions" />
+			<class name="testScripts.CphActions" />
+			<class name="testScripts.FiltersonWalkinPage" />
+			<class name="testScripts.FiltersonBookingPage" />
+			<class name="testScripts.AddUsers" />
+			<class name="testScripts.AddNewProject" />
+			<class name="testScripts.FiltersonProjectPage" />
+			<class name="testScripts.AddBrokerageScheme" />
+			<class name="testScripts.FiltersonBrokeragePage" />
+			<class name="testScripts.RechargeWallet" />
+		</classes>
+	</test> <!-- SanityTest -->
+</suite> <!-- SanitySuite01 -->

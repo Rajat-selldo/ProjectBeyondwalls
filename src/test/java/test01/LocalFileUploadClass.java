@@ -5,8 +5,8 @@ import java.io.IOException;
 import org.testng.annotations.Test;
 
 import pom.beyondwalls.utility.BaseTest;
-import pom.userActions.Cpregistration;
 import pom.userActions.LoginPage;
+import pom.userActions.WalletRecharge;
 
 public class LocalFileUploadClass extends BaseTest {
 
@@ -15,17 +15,20 @@ public class LocalFileUploadClass extends BaseTest {
 // Login Flow
 		LoginPage userCreds = new LoginPage(driver);
 		userCreds.clickonSignIn();
-		userCreds.enterUserPhone("+916974814923");
+		userCreds.enterUserPhone("+919090909091");
 		userCreds.clickonGetOtp();
 		userCreds.enterUserOtp("000000");
 		userCreds.clickonverify();
 
-		Cpregistration register = new Cpregistration(driver);
-		register.clickonUploadDocs();
-		// Upload Documents
-		register.uploads();
-		register.submitApplication();
-		register.clickonConfirmation();
+		WalletRecharge recharge = new WalletRecharge(driver);
+		recharge.clickonProjects();
+		recharge.clickonEllipsis();
+		recharge.clickonRechargeWallet();
+		recharge.selectPaymentMode("Online");
+		recharge.enterCampaignFrom("01/02/2040");
 
+		
+		//New code added temp.
+		
 	}
 }
