@@ -93,10 +93,8 @@ public class CPuserRegistration extends BaseTest {
 		register.clickonSave();
 
 		// Upload Documents
-		register.clickonUpload();
-		register.submitApplication();
-		register.clickonConfirmation();
-	//	register.uploads(); 
+		register.uploads();
+		
 	}
 
 }

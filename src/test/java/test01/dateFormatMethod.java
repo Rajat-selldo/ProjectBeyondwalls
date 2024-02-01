@@ -63,13 +63,7 @@ public class dateFormatMethod {
 	// Main method to selection of date/phone/email
 	public static void main(String[] args) {
 //			System.out.println(""+ getDate(600, "Y"));
-<<<<<<< HEAD
-		
 //		System.out.println(Random("N", 1000));
-=======
-
-		System.out.println(Random("N", 1000));
->>>>>>> branch 'master' of https://github.com/Rajat-selldo/ProjectBeyondwalls.git
 	}
 
 	// *[@id="add-new-lead-form"]/div[3]/div/div/div/div[1] --> click

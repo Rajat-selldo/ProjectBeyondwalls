@@ -1,5 +1,6 @@
 package pom.userActions;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -135,8 +136,8 @@ public class Cpregistration extends ReusableUtils {
 	@FindBy(how = How.XPATH, using = "(//div[contains(text(), 'PAN Card')])[1]")
 	private WebElement clickonDropdown;
 
-	@FindBy(how = How.XPATH, using = "//input[@name='files[]']")	//input[name='files[]']
-	private WebElement clickonUpload; 
+	@FindBy(how = How.CSS, using = "input[name='files[]']")
+	private WebElement clickonUpload;
 
 	@FindBy(how = How.XPATH, using = "//a[contains(text(), 'Submit Application')]")
 	private WebElement submitApplication;
@@ -331,34 +332,37 @@ public class Cpregistration extends ReusableUtils {
 		waitUntilClickable(clickonDropdown).click();
 	}
 
-	public void clickonUpload() {
-		wait(4000);
+	public void uploads() {
+		wait(1000);
 		scrollIntoView(clickonUpload);
-		wait(2000);
-		waitUntilVisiblity(clickonUpload).sendKeys(System.getProperty("user.dir") + "\\com.beyondwalls\\Test Documents\\bld2.jpg");
+		clickonUpload.sendKeys("D://Automation//SendToAniket.zip_expanded//com.beyondwalls//Test Documents//bld1.jpg");
 		wait(2000);
 		driver.navigate().refresh();
-		wait(3000);
-	}
-
-	public void uploads() {
-		wait(5000);
-		uploads.sendKeys("D:\\rajat\\Test Files\\bld2.jpg");
-		wait(5000);
-	}
-
-	public void submitApplication() {
 		wait(2000);
-		waitUntilVisiblity(submitApplication).click();
+		
+			//Handling alert pop-up 
+			Alert alert = driver.switchTo().alert();
+			alert.accept();
+			wait(2000);
+		
+		waitUntilClickable(clickonUploadDocs).click();
 		wait(2000);
-	}
-
-	public void clickonConfirmation() {
+		jsClick(submitApplication);
+		wait(2000);
 		waitUntilClickable(clickonConfirmation).click();
 		wait(2000);
+		driver.navigate().refresh();
+		wait(2000);
 	}
-<<<<<<< HEAD
+	
 
-=======
->>>>>>> branch 'master' of https://github.com/Rajat-selldo/ProjectBeyondwalls.git
+//Method for moving directly on the Upload documents section 
+	@FindBy(how = How.XPATH, using = "//p[contains(text(), 'Upload Documents')]")
+	private WebElement clickonUploadDocs;
+
+	public void clickonUploadDocs() {
+		wait(2000);
+		scrollIntoView(clickonUploadDocs);
+		waitUntilClickable(clickonUploadDocs).click();
+	}
 }
