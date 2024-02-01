@@ -1,90 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-01T14:35:19 IST" name="Default suite" finished-at="2024-02-01T14:35:42 IST" duration-ms="23413">
+  <suite started-at="2024-02-01T15:42:40 IST" name="Default suite" finished-at="2024-02-01T15:43:08 IST" duration-ms="28029">
     <groups>
     </groups>
-    <test started-at="2024-02-01T14:35:19 IST" name="Default test" finished-at="2024-02-01T14:35:42 IST" duration-ms="23413">
+    <test started-at="2024-02-01T15:42:40 IST" name="Default test" finished-at="2024-02-01T15:43:08 IST" duration-ms="28029">
       <class name="test01.LocalFileUploadClass">
-        <test-method is-config="true" signature="browserConfig()[pri:0, instance:test01.LocalFileUploadClass@3eb738bb]" started-at="2024-02-01T14:35:19 IST" name="browserConfig" finished-at="2024-02-01T14:35:27 IST" duration-ms="7596" status="PASS">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:test01.LocalFileUploadClass@31190526]" started-at="2024-02-01T15:42:40 IST" name="browserConfig" finished-at="2024-02-01T15:42:44 IST" duration-ms="3857" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserConfig -->
-        <test-method signature="logIn()[pri:0, instance:test01.LocalFileUploadClass@3eb738bb]" started-at="2024-02-01T14:35:27 IST" name="logIn" finished-at="2024-02-01T14:35:42 IST" duration-ms="15757" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=120.0.6099.225)
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c0aef2f7713f0d7e812ba001276ebbb5, sendKeysToElement {value=[Ljava.lang.CharSequence;@1f9d6c7b, id=8DFA97F3431415A97117AAA4BC25017F_element_121}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\SIF-L\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56017}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56017/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (c0aef2f7713f0d7e812ba001276ebbb5)] -> xpath: ((//form[@id='wallet_receipt_form']/div)[1]/div/div)[1]]
-Session ID: c0aef2f7713f0d7e812ba001276ebbb5]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=120.0.6099.225)
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c0aef2f7713f0d7e812ba001276ebbb5, sendKeysToElement {value=[Ljava.lang.CharSequence;@1f9d6c7b, id=8DFA97F3431415A97117AAA4BC25017F_element_121}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\SIF-L\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56017}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56017/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (c0aef2f7713f0d7e812ba001276ebbb5)] -> xpath: ((//form[@id='wallet_receipt_form']/div)[1]/div/div)[1]]
-Session ID: c0aef2f7713f0d7e812ba001276ebbb5
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
-at pom.userActions.WalletRecharge.selectPaymentMode(WalletRecharge.java:144)
-at test01.LocalFileUploadClass.logIn(LocalFileUploadClass.java:27)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+        <test-method signature="logIn()[pri:0, instance:test01.LocalFileUploadClass@31190526]" started-at="2024-02-01T15:42:44 IST" name="logIn" finished-at="2024-02-01T15:43:08 IST" duration-ms="23982" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logIn -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:test01.LocalFileUploadClass@3eb738bb]" started-at="2024-02-01T14:35:42 IST" name="terminate" finished-at="2024-02-01T14:35:42 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="terminate()[pri:0, instance:test01.LocalFileUploadClass@31190526]" started-at="2024-02-01T15:43:08 IST" name="terminate" finished-at="2024-02-01T15:43:08 IST" duration-ms="134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
