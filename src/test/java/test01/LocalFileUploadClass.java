@@ -26,9 +26,5 @@ public class LocalFileUploadClass extends BaseTest {
 		recharge.clickonRechargeWallet();
 		recharge.selectPaymentMode("Online");
 		recharge.enterCampaignFrom("01/02/2040");
-
-		
-		// Hello Bhawa
-		
 	}
 }
