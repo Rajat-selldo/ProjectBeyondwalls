@@ -19,7 +19,7 @@ public class UserLogin extends BaseTest {
 		// CPH - 916954535251
 		// DSM - 919156555453
 		// Admin - 919090909091
-		// CPO - 916200000001
+		// CPO - 916200000001 (JoyBoy)
 		// CP - 916200000002
 		userCreds.clickonGetOtp();
 		userCreds.enterUserOtp("000000");

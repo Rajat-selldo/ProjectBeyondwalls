@@ -122,11 +122,17 @@ public class WalletRecharge extends ReusableUtils {
 	@FindBy(how = How.XPATH, using = "//input[@type='radio' and @value='true']") // use 'false' in value tag
 	private WebElement selectInsuffucientBalance;
 
-	@FindBy(how = How.XPATH, using = "(//div[contains(text(), 'Netbanking')])[2]")
+	@FindBy(how = How.CSS, using = "button[method='netbanking']")
 	private WebElement selectNetbanking;
 
 	@FindBy(how = How.XPATH, using = "//div[@class='mb-3']//div[starts-with(@class,'option')]")
 	private List<WebElement> SelectPaymentMode;
+
+	@FindBy(how = How.XPATH, using = "//div[contains(text(), 'Axis')]")
+	private WebElement selectBank;
+
+	@FindBy(how = How.XPATH, using = "button[id='redesign-v15-cta']")
+	private WebElement clickOnPayNow;
 
 //1. Recharge Wallet 
 	public void clickonProjects() {
@@ -142,10 +148,10 @@ public class WalletRecharge extends ReusableUtils {
 	}
 
 	public void selectPaymentMode(String enterModeName) {
-
 		waitUntilVisiblity(selectPaymentMode).click();
 		waitUntilVisiblity(SelectPaymentMode.stream().filter(S -> S.getText().trim().equalsIgnoreCase(enterModeName))
 				.findFirst().get()).click();
+		wait(2000);
 	}
 
 	public void enterIssuingBank(String enterBankName) {
@@ -165,11 +171,17 @@ public class WalletRecharge extends ReusableUtils {
 	}
 
 	public void enterCampaignFrom(String enterCampaignStartDate) {
+		waitUntilVisiblity(enterCampaignFrom).clear();
+		wait(1000);
 		waitUntilVisiblity(enterCampaignFrom).sendKeys(enterCampaignStartDate);
+		wait(2000);
 	}
 
 	public void enterCampaignTo(String enterCampaignEndDate) {
+		waitUntilVisiblity(enterCampaignTo).clear();
+		wait(1000);
 		waitUntilVisiblity(enterCampaignTo).sendKeys(enterCampaignEndDate);
+		wait(2000);
 	}
 
 	public void enterSvCount(String enterSVCount) {
@@ -198,6 +210,24 @@ public class WalletRecharge extends ReusableUtils {
 
 	public void clickOnSave() {
 		waitUntilClickable(clickOnSave).click();
+		wait(3000);
+		driver.findElement(By.xpath(
+				"//div//div//button[@method='netbanking']"))
+				.click();
+
+//		// Handling payment window by using Get window Handles
+//		Set<String> handles = driver.getWindowHandles();
+//		List<String> hList = new ArrayList<String>(handles);
+//		if (SwitchToNextWindow("Launchpad", hList)) {
+//			System.out.println("Current Page URL - " + driver.getCurrentUrl() + " : " + driver.getTitle());
+//		}
+
+		wait(1000);
+		jsClick(selectBank);
+		wait(2000);
+		jsClick(clickOnPayNow);
+		wait(2000);
+
 	}
 
 //2. Transfer Wallet Balance
@@ -263,4 +293,15 @@ public class WalletRecharge extends ReusableUtils {
 		waitUntilClickable(selectInsuffucientBalance).click();
 	}
 
+	// Get Window Handles
+	public boolean SwitchToNextWindow(String windowTitle, List<String> hList) {
+		for (String e : hList) {
+			String title = driver.switchTo().window(e).getTitle();
+			if (title.contains(windowTitle)) {
+				System.out.println("Found the right window...");
+				return true;
+			}
+		}
+		return false;
+	}
 }

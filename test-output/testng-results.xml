@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-01T15:42:40 IST" name="Default suite" finished-at="2024-02-01T15:43:08 IST" duration-ms="28029">
+  <suite started-at="2024-02-05T14:04:09 IST" name="Default suite" finished-at="2024-02-05T14:04:27 IST" duration-ms="17925">
     <groups>
     </groups>
-    <test started-at="2024-02-01T15:42:40 IST" name="Default test" finished-at="2024-02-01T15:43:08 IST" duration-ms="28029">
-      <class name="test01.LocalFileUploadClass">
-        <test-method is-config="true" signature="browserConfig()[pri:0, instance:test01.LocalFileUploadClass@31190526]" started-at="2024-02-01T15:42:40 IST" name="browserConfig" finished-at="2024-02-01T15:42:44 IST" duration-ms="3857" status="PASS">
+    <test started-at="2024-02-05T14:04:09 IST" name="Default test" finished-at="2024-02-05T14:04:27 IST" duration-ms="17925">
+      <class name="userApprovalsinCompany.ApprovalofPartnerCompany">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:userApprovalsinCompany.ApprovalofPartnerCompany@1e800aaa]" started-at="2024-02-05T14:04:09 IST" name="browserConfig" finished-at="2024-02-05T14:04:13 IST" duration-ms="4711" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserConfig -->
-        <test-method signature="logIn()[pri:0, instance:test01.LocalFileUploadClass@31190526]" started-at="2024-02-01T15:42:44 IST" name="logIn" finished-at="2024-02-01T15:43:08 IST" duration-ms="23982" status="PASS">
+        <test-method signature="approveCompany()[pri:0, instance:userApprovalsinCompany.ApprovalofPartnerCompany@1e800aaa]" started-at="2024-02-05T14:04:13 IST" name="approveCompany" finished-at="2024-02-05T14:04:27 IST" duration-ms="13175" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logIn -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:test01.LocalFileUploadClass@31190526]" started-at="2024-02-01T15:43:08 IST" name="terminate" finished-at="2024-02-01T15:43:08 IST" duration-ms="134" status="PASS">
+        </test-method> <!-- approveCompany -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:userApprovalsinCompany.ApprovalofPartnerCompany@1e800aaa]" started-at="2024-02-05T14:04:27 IST" name="terminate" finished-at="2024-02-05T14:04:27 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
-      </class> <!-- test01.LocalFileUploadClass -->
+      </class> <!-- userApprovalsinCompany.ApprovalofPartnerCompany -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

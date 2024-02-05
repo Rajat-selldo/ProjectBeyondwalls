@@ -9,14 +9,14 @@ import pom.userActions.WalletRecharge;
 public class RechargeWallet extends BaseTest {
 
 	public void logIn() {
-		// Login with Administrator user
-				LoginPage userCreds = new LoginPage(driver);
-				userCreds.clickonSignIn();
-				userCreds.enterUserPhone("+919090909091");
-				userCreds.clickonGetOtp();
-				userCreds.enterUserOtp("000000");
-				userCreds.clickonverify();
-				System.out.println("User logged in successfully with Phone + OTP.");
+	// Login with Administrator user
+			LoginPage userCreds = new LoginPage(driver);
+			userCreds.clickonSignIn();
+			userCreds.enterUserPhone("+919090909091");
+			userCreds.clickonGetOtp();
+			userCreds.enterUserOtp("000000");
+			userCreds.clickonverify();
+			System.out.println("User logged in successfully with Phone + OTP.");
 	}
 	
 	@Test
@@ -28,8 +28,8 @@ public class RechargeWallet extends BaseTest {
 		recharge.clickonEllipsis();
 		recharge.clickonRechargeWallet();
 		recharge.selectPaymentMode("Online");
-		recharge.enterCampaignFrom("01/02/2040");
-		recharge.enterCampaignTo("02/02/2040");
+		recharge.enterCampaignFrom("17/02/2040");
+		recharge.enterCampaignTo("18/02/2040");
 		recharge.enterSvCount("1");
 		recharge.enterSvIncentive("100");
 		recharge.enterSbCount("1");
