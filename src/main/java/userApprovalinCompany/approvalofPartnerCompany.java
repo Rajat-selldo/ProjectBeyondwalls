@@ -22,10 +22,10 @@ public class approvalofPartnerCompany extends ReusableUtils {
 	@FindBy(how = How.XPATH, using = "//a[contains(text(), 'Partner Companies')]")
 	private WebElement clickPartnerCompanies;
 	
-	@FindBy(how = How.XPATH, using = "(//a[@id='dropdownMenuLink'])[4]")
+	@FindBy(how = How.XPATH, using = "(//a[@id='dropdownMenuLink'])[1]")
 	private WebElement clickonEllipsis;
 
-	@FindBy(how = How.XPATH, using = "(//a[contains(text(), 'Edit Partner Company')])[4]")
+	@FindBy(how = How.XPATH, using = "(//a[contains(text(), 'Edit Partner Company')])[1]")
 	private WebElement clickonEditpc;
 
 	@FindBy(how = How.CSS, using = "#channel_partner_event-selectized")
