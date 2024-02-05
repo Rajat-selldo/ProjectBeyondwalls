@@ -1,4 +1,4 @@
-package testScripts;
+package basicCPFlow;
 
 import java.awt.AWTException;
 import java.io.IOException;
