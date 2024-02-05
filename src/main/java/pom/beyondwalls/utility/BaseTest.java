@@ -136,7 +136,7 @@ public class BaseTest {
 
 		try {
 
-	//		driver.quit();
+			driver.quit();
 
 		} catch (Exception e) {
 
