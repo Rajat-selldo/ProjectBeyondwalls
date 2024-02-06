@@ -6,26 +6,22 @@ import pom.beyondwalls.utility.BaseTest;
 import pom.userActions.LoginPage;
 import pom.userActions.WalletRecharge;
 
-public class RechargeWallet extends BaseTest {
+public class EditIncentives extends BaseTest {
 
 	@Test
-	public void TC01() {
-//1. Recharge Wallet 
+	public void TC03() {
+//3. Edit incentives 
 		LoginPage logInPage = new LoginPage(driver);
 		logInPage.logIn(prop("adminPhone"));
 		WalletRecharge recharge = new WalletRecharge(driver);
 		recharge.clickonProjects();
 		recharge.clickonEllipsis();
-		recharge.clickonRechargeWallet();
-		recharge.selectPaymentMode("Online");
-		recharge.enterCampaignFrom("17/02/2040");
-		recharge.enterCampaignTo("18/02/2040");
-		recharge.enterSvCount("1");
-		recharge.enterSvIncentive("100");
-		recharge.enterSbCount("1");
-		recharge.enterSbIncentive("500");
+		recharge.clickonEditIncetive();
+		recharge.enterSvAbsoluteValue("1000");
+		recharge.enterBookingAbsoluteValue("3000");
 
 		recharge.clickOnSave();
+
 	}
 
 }

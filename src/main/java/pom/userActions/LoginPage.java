@@ -1,7 +1,6 @@
 package pom.userActions;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,8 +8,6 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 import pom.beyondwalls.utility.ReusableUtils;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage extends ReusableUtils {
 	WebDriver driver;
@@ -21,8 +18,7 @@ public class LoginPage extends ReusableUtils {
 		PageFactory.initElements(driver, this);
 	}
 
-	
-	//PageFactory design pattern 
+// PageFactory design pattern
 	// sign-in button x-path
 	@FindBy(how = How.XPATH, using = "(//a[contains(text(), 'Sign in')])[1]")
 	private WebElement clickonSignIn;
@@ -51,14 +47,12 @@ public class LoginPage extends ReusableUtils {
 	@FindBy(how = How.XPATH, using = "//a[@href='/users/sign_out?locale=en']")
 	private WebElement clickonSignout;
 
-	
 //Implementation of pageFactory elements 
 	// Click on Sign-in button
 	public void clickonSignIn() {
 		waitUntilClickable(clickonSignIn).click();
 	}
 
-	
 //Login with Phone 
 	public void enterUserPhone(String phone) {
 		waitUntilClickable(userPhone).click();
@@ -99,6 +93,32 @@ public class LoginPage extends ReusableUtils {
 
 	public void clickonSignout() {
 		waitUntilClickable(clickonSignout).click();
+	}
+
+	public void logIn(String phone) {
+		LoginPage userCreds = new LoginPage(driver);
+		userCreds.clickonSignIn();
+		userCreds.enterUserPhone(phone);
+		// Billing Team - 919157565554
+		// CPH - 916954535251
+		// DSM - 919156555453
+		// Admin - 919090909091
+		// CPO - 916200000001 (JoyBoy)
+		// CP - 916200000002
+		userCreds.clickonGetOtp();
+		userCreds.enterUserOtp("000000");
+		userCreds.clickonverify();
+		System.out.println("User logged in successfully with Phone + OTP.");
+
+		// Wait for the success message element to be visible
+		WebElement successMessage = driver.findElement(By.xpath("//div[@class='noty-info ms-3']"));
+		boolean isDisplayed = successMessage.isDisplayed();
+		// Check if the success message is displayed
+		if (isDisplayed) {
+			System.out.println("Login successful! Success message is displayed.");
+		} else {
+			System.out.println("Login unsuccessful! Error message is displayed.");
+		}
 	}
 
 }

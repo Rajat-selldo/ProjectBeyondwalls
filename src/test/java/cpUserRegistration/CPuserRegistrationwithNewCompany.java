@@ -8,7 +8,7 @@ import pom.beyondwalls.utility.BaseTest;
 import pom.userActions.Cpregistration;
 import pom.userActions.LoginPage;
 
-public class CPuserRegistration extends BaseTest {
+public class CPuserRegistrationwithNewCompany extends BaseTest {
 	String newlyRegisteredCP;
 
 	public void cpRegistration() {
@@ -20,7 +20,6 @@ public class CPuserRegistration extends BaseTest {
 		register.cpEmail("raj" + Random("A", 4) + Random("N", 3) + "@mailinator.com");
 		System.out.println("Newly registered user's Phone is - " + newlyRegisteredCP);
 		register.submitForm();
-
 		register.validatingSuccessMsg();
 	}
 
@@ -34,18 +33,6 @@ public class CPuserRegistration extends BaseTest {
 		userCreds.enterUserOtp("000000");
 		userCreds.clickonverify();
 		System.out.println("User logged in successfully with Phone + OTP.");
-
-	}
-
-	@Test
-	public void cpOnboardingwithExisting() throws InterruptedException {
-//Run login with same signed up CP user then run the following script 
-		cpRegistration();
-		logIn();
-		Cpregistration register = new Cpregistration(driver);
-		register.clickoncompanyName("JoyBoy");
-		register.clickonProceed();
-
 	}
 
 	@Test
@@ -60,7 +47,6 @@ public class CPuserRegistration extends BaseTest {
 		register.enterPanNumber("AAAAK" + Random("N", 4) + Random("A", 1));
 		register.enterReraid(Random("A", 1) + Random("N", 11));
 		register.clickonProceed();
-
 		// Form Two
 		register.enterOwnerName(Random("A", 5) + Random("A", 6));
 		register.enterOwnerPhone("7" + Random("N", 9));
@@ -70,13 +56,9 @@ public class CPuserRegistration extends BaseTest {
 		register.selectRegion("Wakad");
 		register.selectManager("Rajat");
 		register.clickonSave();
-
 		// Form Three - Company Details Form
 		register.selectFirmExpertise("Rentals");
 		register.selectFirmExpertise("Residential");
-		// register.enterGstNumber(Random("A",2) +
-		// Random("A",5)+Random("N",4)+Random("A",1) + Random("N",1) + Random("A",1) +
-		// Random("N",1));
 		register.selectExperience("1-5");
 		register.selectDevelopers("godrej");
 		register.selectDevelopers("Mahindra");
@@ -94,7 +76,7 @@ public class CPuserRegistration extends BaseTest {
 
 		// Upload Documents
 		register.uploads();
-		
+
 	}
 
 }
