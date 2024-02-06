@@ -6,23 +6,13 @@ import pom.beyondwalls.utility.BaseTest;
 import pom.userActions.ActionsFromDsm;
 import pom.userActions.LoginPage;
 
-public class DsmActions extends BaseTest {
-	
-	// Login with DSM user
-	public void logIn() {
-		LoginPage userCreds = new LoginPage(driver);
-		userCreds.clickonSignIn();
-		userCreds.enterUserPhone("+919156555453");
-		userCreds.clickonGetOtp();
-		userCreds.enterUserOtp("000000");
-		userCreds.clickonverify();
-		System.out.println("User logged in successfully with Phone + OTP.");
-	}
+public class WalkinActions extends BaseTest {
 
 // DSM actions like Walk-in Details, Approve/Reject Walk-in, etc. on the Walk-ins 	
 	@Test
 	public void walkinActions() {
-		logIn();
+		LoginPage logInPage = new LoginPage(driver);
+		logInPage.logIn(prop("dsmPune"));
 		ActionsFromDsm dsmUser = new ActionsFromDsm(driver);
 		dsmUser.goToWalkins();
 		dsmUser.clickonEllipsis();
@@ -33,18 +23,5 @@ public class DsmActions extends BaseTest {
 
 	}
 
-// DSM actions like Booking Details, Approve/Reject Booking, etc. on the Booking 
-	@Test
-	public void bookingActions() {
-		logIn();
-		ActionsFromDsm dsmUser = new ActionsFromDsm(driver);
-		dsmUser.goToBookings();
-		dsmUser.clickonbookingEllipsis();
-//		dsmUser.clickonBookingDetails();
-//		dsmUser.approveBooking();
-//		dsmUser.rejectBooking();
-		dsmUser.clickOnbookingDocuments();
-
-	}
 
 }

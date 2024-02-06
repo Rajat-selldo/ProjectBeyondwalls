@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="userApprovalsinCompany.ApprovalofPartnerCompany">
+      <class name="basicCPFlow.SuiteOne">
         <methods>
-          <include name="approveCompany"/>
           <include name="terminate"/>
+          <include name="addBooking"/>
           <include name="browserConfig"/>
         </methods>
-      </class> <!-- userApprovalsinCompany.ApprovalofPartnerCompany -->
+      </class> <!-- basicCPFlow.SuiteOne -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

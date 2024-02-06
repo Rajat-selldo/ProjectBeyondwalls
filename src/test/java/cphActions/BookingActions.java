@@ -6,18 +6,16 @@ import pom.beyondwalls.utility.BaseTest;
 import pom.userActions.ActionsFromCph;
 import pom.userActions.LoginPage;
 
-public class WalkinActions extends BaseTest {
+public class BookingActions extends BaseTest {
 
-//CPH actions on Walk-in such as Walk-in Details, BW Approve/Reject 	
 	@Test
-	public void walkinActions() {
+	public void bookingActions() {
 		LoginPage logInPage = new LoginPage(driver);
 		logInPage.logIn(prop("cphPune"));
 		ActionsFromCph cphUser = new ActionsFromCph(driver);
-		cphUser.clickonWalkinLink();
-		cphUser.clickonEllipsis();
-		cphUser.walkindetails();
+		cphUser.goToBookings();
+		cphUser.clickonbookingEllipsis();
+		cphUser.clickonBookingDetails();
 
 	}
-
 }
