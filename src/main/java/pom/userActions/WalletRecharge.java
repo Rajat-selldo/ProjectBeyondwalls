@@ -210,10 +210,11 @@ public class WalletRecharge extends ReusableUtils {
 
 	public void clickOnSave() {
 		waitUntilClickable(clickOnSave).click();
-		wait(3000);
-		driver.findElement(By.xpath(
-				"//div//div//button[@method='netbanking']"))
-				.click();
+		wait(2000);
+	}
+	
+	public void razorPayFlow() {
+		waitUntilClickable(selectNetbanking).click();
 
 //		// Handling payment window by using Get window Handles
 //		Set<String> handles = driver.getWindowHandles();

@@ -2,8 +2,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="SuiteSanityOne">
 	<listeners>
-		<listener class-name="pom.beyondwalls.Utility.Listneers"></listener>
-		<listener class-name="pom.beyondwalls.Utility.AnnotationTransformer"></listener>
+		<listener class-name="pom.beyondwalls.utility.Listneers"></listener>
+		<listener class-name="pom.beyondwalls.utility.AnnotationTransformer"></listener>
 	</listeners>
 	<test thread-count="5" name="Test">
 		<classes>

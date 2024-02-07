@@ -18,14 +18,15 @@ public class RechargeWallet extends BaseTest {
 		recharge.clickonEllipsis();
 		recharge.clickonRechargeWallet();
 		recharge.selectPaymentMode("Online");
-		recharge.enterCampaignFrom("17/02/2040");
-		recharge.enterCampaignTo("18/02/2040");
+		recharge.enterCampaignFrom("21/02/2040");
+		recharge.enterCampaignTo("22/02/2040");
 		recharge.enterSvCount("1");
 		recharge.enterSvIncentive("100");
 		recharge.enterSbCount("1");
 		recharge.enterSbIncentive("500");
 
 		recharge.clickOnSave();
+		recharge.razorPayFlow();
 	}
 
 }
