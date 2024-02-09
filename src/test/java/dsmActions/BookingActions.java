@@ -10,7 +10,7 @@ public class BookingActions extends BaseTest {
 
 	// DSM actions like Booking Details, Approve/Reject Booking, etc. on the Booking
 	@Test
-	public void bookingActions() {
+	public void bookingDsmActions() {
 		LoginPage logInPage = new LoginPage(driver);
 		logInPage.logIn(prop("dsmPune"));
 		ActionsFromDsm dsmUser = new ActionsFromDsm(driver);
@@ -20,7 +20,6 @@ public class BookingActions extends BaseTest {
 //		dsmUser.approveBooking();
 //		dsmUser.rejectBooking();
 		dsmUser.clickOnbookingDocuments();
-
 	}
 
 }

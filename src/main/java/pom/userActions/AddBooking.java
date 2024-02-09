@@ -127,14 +127,12 @@ public class AddBooking extends ReusableUtils {
 		managerSelection.sendKeys(managerName);
 		wait(1000);
 		managerSelection.sendKeys(Keys.ENTER);
-	//	managerSelection.submit();
 		wait(1000);
 	}
 
 	public void submitForm() throws AWTException, InterruptedException {
 		waitUntilVisiblity(submitForm).click();
 		wait(5000);
-//		jsClick(submitForm);
 	}
 
 	public void handleConfirmationPopup() {

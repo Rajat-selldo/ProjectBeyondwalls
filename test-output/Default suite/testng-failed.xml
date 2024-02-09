@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="rechargeWallet.RechargeWallet">
+      <class name="cphActions.BookingActions">
         <methods>
           <include name="terminate"/>
-          <include name="TC01"/>
           <include name="browserConfig"/>
+          <include name="bookingCphActions"/>
         </methods>
-      </class> <!-- rechargeWallet.RechargeWallet -->
+      </class> <!-- cphActions.BookingActions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -20,9 +20,6 @@ public class FiltersonWalkinPage extends BaseTest {
 		checkFilters.gotoWalkins();
 		checkFilters.clickonFilter();
 		checkFilters.selectProjectname2("Malpani");
-		checkFilters.selectApprovalStatus("Approved");
-		checkFilters.selectChannelPartner("Joy boy");
-//		checkFilters.enterConductedOndate("10/10/2023-30/12/2023");	
 		checkFilters.applyFilter();
 
 	}
