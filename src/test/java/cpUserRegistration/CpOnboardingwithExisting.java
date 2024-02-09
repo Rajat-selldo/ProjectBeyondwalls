@@ -21,11 +21,10 @@ public class CpOnboardingwithExisting extends BaseTest {
 		register.validatingSuccessMsg();
 	}
 
-//Need to run login method after registration to run the On-boarding method 											//(dependsOnMethods = "cpRegistration")
+//Need to run login method after registration to run the On-boarding method 
 	public void logIn() throws InterruptedException {
 // Login Flow
 		LoginPage userCreds = new LoginPage(driver);
-		// userCreds.clickonSignIn();
 		userCreds.enterUserPhone(newlyRegisteredCP);
 		userCreds.clickonGetOtp();
 		userCreds.enterUserOtp("000000");
@@ -39,7 +38,7 @@ public class CpOnboardingwithExisting extends BaseTest {
 		cpRegistration();
 		logIn();
 		Cpregistration register = new Cpregistration(driver);
-		register.clickoncompanyName("JoyBoy");
+		register.clickoncompanyName("JoyBoy"); // Set company based on registration
 		register.clickonProceed();
 
 	}

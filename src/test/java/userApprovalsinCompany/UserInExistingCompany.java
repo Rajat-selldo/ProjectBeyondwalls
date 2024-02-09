@@ -11,7 +11,8 @@ public class UserInExistingCompany extends BaseTest {
 	@Test
 	public void approveCP() throws InterruptedException {
 		LoginPage logInPage = new LoginPage(driver);
-		logInPage.logIn(prop("ownersPhone1"));
+		logInPage.logIn(prop("ownersPhone1")); // Use company owner's phone no. in which new CP is registered by using
+												// CpOnboardingwithExisting.cpOnboardingwithExisting
 		userInExistingCompany user = new userInExistingCompany(driver);
 		user.goToUserAccounts();
 		user.clickOnUserRequests();

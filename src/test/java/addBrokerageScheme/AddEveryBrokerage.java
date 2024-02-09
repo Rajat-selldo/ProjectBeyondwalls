@@ -20,9 +20,8 @@ public class AddEveryBrokerage extends BaseTest {
 		addScheme.enterDescription("Scheme Name Automated " + Random("A", 40) + Random("AN", 20));
 		addScheme.enterCityName("Pune");
 		addScheme.enterProjectName("Sommet");
-		addScheme.schemeStartsOn("12/01/2024");
-		addScheme.schemeEndsOn("15/01/2024");
-		addScheme.selectResource("Booking");
+		addScheme.schemeStartsOn("01/01/2040");
+		addScheme.schemeEndsOn("02/01/2040");
 		addScheme.selectEveryBookingType();
 		addScheme.selectCategory("Spot Booking");
 		addScheme.enterTermsNConditions("Scheme T&C's Automated " + Random("A", 20) + Random("AN", 15));
@@ -31,6 +30,6 @@ public class AddEveryBrokerage extends BaseTest {
 		addScheme.enterLadderAbsValue("1000");
 		addScheme.clickOnSave();
 
-	}
+	}	
 
 }

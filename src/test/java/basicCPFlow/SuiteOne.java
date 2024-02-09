@@ -22,14 +22,9 @@ public class SuiteOne extends BaseTest {
 		addWalkinForm.enterFirstName(Random("A", 7));
 		addWalkinForm.enterLastName(Random("A", 8));
 		addWalkinForm.enterWalkinEmail("raj" + Random("A", 10) + "@mailinator.com");
-
 		addWalkinForm.enterWalkinPhone("7" + Random("N", 9));
-
-// Project drop-down selection
 		addWalkinForm.selectProject("Sommet (Pune)");
-
-//Walk-in Calendar 
-		addWalkinForm.datePicker("05/02/2024", "04:30");
+		addWalkinForm.datePicker("10/02/2024", "04:30");
 		addWalkinForm.clickonSave();
 		System.out.println("Walkin added successfully.");
 	}
@@ -55,12 +50,9 @@ public class SuiteOne extends BaseTest {
 		addBookingForm.enterUnitName(Random("A", 1) + "-" + Random("N", 3));
 		addBookingForm.enterUnitConfiguration("1BHK");
 		addBookingForm.enterConsiderationValue("6294001");
-
-// Booked On and Tentative agreement date 
-		// addBookingForm.clickonBookedOn("03/01/2024");
 		addBookingForm.clickonTentativeAgreementDate("27/02/2024");
 		addBookingForm.bookingSource("Channel");
-		addBookingForm.managerSelection("Rocks");
+		addBookingForm.managerSelection("sid");
 		addBookingForm.submitForm();
 
 //Got stuck in the handling prompt alert,  Not resolved...  

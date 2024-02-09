@@ -10,55 +10,52 @@ import pom.beyondwalls.utility.ReusableUtils;
 
 public class ActionsFromCph extends ReusableUtils {
 	WebDriver driver;
-	
+
 	public ActionsFromCph(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
-////PageFactory design pattern 
-	// Click on Walk-in section link 
+
+//PageFactory design pattern 
+	// Click on Walk-in section link
 	@FindBy(how = How.XPATH, using = "//a[text()='Walk-ins']")
-	private WebElement clickonWalkinLink; 
-	
+	private WebElement clickonWalkinLink;
+
 	@FindBy(how = How.XPATH, using = "(//a[@id='dropdownMenuLink'])[1]")
 	private WebElement clickonEllipsis;
-	
+
 	@FindBy(how = How.XPATH, using = "(//a[contains(text(), 'Walk-in Details')])[1]")
-	// Use this - //div[@class='dropdown-menu dropdown-menu-right show']//a[@class='dropdown-item'][normalize-space()='Walk-in Details']
 	private WebElement walkindetails;
-	
+
 	@FindBy(how = How.XPATH, using = "(//a[contains(text(), 'BW Approve')])[1]")
 	private WebElement bwapprove;
-	
+
 	@FindBy(how = How.XPATH, using = "(//a[contains(text(), 'BW Reject')])[1]")
 	private WebElement bwreject;
-	
+
 	@FindBy(how = How.XPATH, using = "(//a[contains(text(), 'Brokerages')])[1]")
-	//Use this - //div[@class='dropdown-menu dropdown-menu-right show']//a[@class='dropdown-item'][normalize-space()='Brokerages']
 	private WebElement brokerages;
-	
+
 	@FindBy(how = How.XPATH, using = "(//a[contains(text(), 'Documents')])[1]")
-	//Use this - //div[@class='dropdown-menu dropdown-menu-right show']//a[@class='dropdown-item modal-remote-form-link'][normalize-space()='Documents']
 	private WebElement documents;
-	
-//Click on Booking section link 
+
+	// Click on Booking section link
 	@FindBy(how = How.XPATH, using = "//a[text()='Bookings']")
 	private WebElement goToBookings;
-	
+
 	@FindBy(how = How.XPATH, using = "(//a[@id='dropdownMenuLink'])[1]")
-	private WebElement clickonbookingEllipsis; 
-	
+	private WebElement clickonbookingEllipsis;
+
 	@FindBy(how = How.XPATH, using = "//a[contains(text(), 'Booking Details')]")
 	private WebElement clickonBookingDetails;
-	
+
 	@FindBy(how = How.XPATH, using = "//a[contains(text(), 'Edit Booking')]")
 	private WebElement clickonEditEditBooking;
-	
+
 	@FindBy(how = How.XPATH, using = "//a[contains(text(), 'BW Approve')]")
 	private WebElement bwApproveBooking;
-	
+
 	@FindBy(how = How.XPATH, using = "//a[contains(text(), 'BW Reject')]")
 	private WebElement bwRejectBooking;
 
@@ -70,48 +67,48 @@ public class ActionsFromCph extends ReusableUtils {
 
 	@FindBy(how = How.XPATH, using = "//a[contains(text(), 'Brokerages')]")
 	private WebElement clickOnBrokerages;
-	
-	
+
 //Walk-ins 	
 	public void clickonWalkinLink() {
 		waitUntilClickable(clickonWalkinLink).click();
 	}
-	
+
 	public void clickonEllipsis() {
 		waitUntilClickable(clickonEllipsis).click();
 	}
-	
+
 	public void walkindetails() {
 		waitUntilClickable(walkindetails).click();
 		wait(2000);
 	}
-	
+
 	public void bwapprove() {
 		waitUntilClickable(bwapprove).click();
 		wait(2000);
 	}
-	
+
 	public void bwreject() {
 		waitUntilClickable(bwreject).click();
 		wait(2000);
 	}
-	
+
 	public void brokerages() {
 		waitUntilClickable(brokerages).click();
+		wait(2000);
 	}
-	
+
 	public void documents() {
 		waitUntilClickable(documents).click();
 		wait(2000);
 	}
-	
+
 //Bookings 	
 	public void goToBookings() {
 		waitUntilClickable(goToBookings).click();
 	}
-	
+
 	public void clickonbookingEllipsis() {
-		waitUntilClickable(goToBookings).click();
+		waitUntilClickable(clickonbookingEllipsis).click();
 	}
 
 	public void clickonBookingDetails() {
@@ -123,12 +120,12 @@ public class ActionsFromCph extends ReusableUtils {
 		waitUntilClickable(clickonEditEditBooking).click();
 		wait(2000);
 	}
-	
+
 	public void bwApproveBooking() {
 		waitUntilClickable(bwApproveBooking).click();
 		wait(2000);
 	}
-	
+
 	public void bwRejectBooking() {
 		waitUntilClickable(bwRejectBooking).click();
 		wait(2000);
@@ -138,16 +135,15 @@ public class ActionsFromCph extends ReusableUtils {
 		waitUntilClickable(moveToConfirmed).click();
 		wait(2000);
 	}
-	
+
 	public void clickOnDocuments() {
 		waitUntilClickable(clickOnDocuments).click();
 		wait(2000);
 	}
-	
+
 	public void clickOnBrokerages() {
 		waitUntilClickable(clickOnBrokerages).click();
 		wait(2000);
 	}
-	
 
 }

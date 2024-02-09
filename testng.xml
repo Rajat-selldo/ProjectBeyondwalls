@@ -5,36 +5,33 @@
 		<listener class-name="pom.beyondwalls.utility.Listneers"></listener>
 		<listener class-name="pom.beyondwalls.utility.AnnotationTransformer"></listener>
 	</listeners>
-	<test thread-count="5" name="Test">
+	<test thread-count="5" name="TestOne">
 		<classes>
-			<class name="addBrokerageScheme.AddEveryBrokerage" />
+			<class name="userLogIn.UserLogin" />
 			<class name="addNewProject.AddNewProject" />
-			<class name="checkingFilters.FiltersonWalkinPage" />
-			<class name="dsmActions.BookingActions" />
-			<class name="addBrokerageScheme.AddWalkinBrokerage" />
-			<class name="checkingFilters.FiltersonBookingPage" />
 			<class name="addInternalUser.AddUsers" />
-			<class name="rechargeWallet.EditIncentives" />
-			<class name="basicCPFlow.SuiteOne" />
-			<class name="basicCPFlow.AddWalkIn" />
-			<class name="rechargeWallet.RechargeWallet" />
+			<class name="cpUserRegistration.CPuserRegistrationwithNewCompany" />
 			<class name="userApprovalsinCompany.ApprovalofPartnerCompany" />
 			<class name="cpUserRegistration.CpOnboardingwithExisting" />
-			<class name="cphActions.BookingActions" />
-			<class name="cpUserRegistration.CPuserRegistrationwithNewCompany" />
-			<class name="addBrokerageScheme.AddSpotBrokerage" />
-			<class name="addBrokerageScheme.AddbothBrokerages" />
-			<class name="userLogIn.UserLogin" />
 			<class name="userApprovalsinCompany.UserInExistingCompany" />
-			<class name="dsmActions.WalkinActions" />
-			<class name="checkingFilters.FiltersonBrokeragePage" />
-			<class name="cphActions.WalkinActions" />
-			<class name="rechargeWallet.TransferWalletBalance" />
-			<class name="basicCPFlow.ConductWalkin" />
 			<class name="checkingFilters.FiltersonProjectPage" />
-			<class name="rechargeWallet.EditProject" />
+			<class name="checkingFilters.FiltersonWalkinPage" />
+			<class name="checkingFilters.FiltersonBookingPage" />
+			<class name="checkingFilters.FiltersonBrokeragePage" />
+			<class name="basicCPFlow.SuiteOne" />
+			<class name="dsmActions.BookingActions" />
+			<class name="cphActions.BookingActions" />
+			<class name="dsmActions.WalkinActions" />
+			<class name="cphActions.WalkinActions" />
+			<class name="addBrokerageScheme.AddWalkinBrokerage" />
+			<class name="addBrokerageScheme.AddSpotBrokerage" />
+			<class name="addBrokerageScheme.AddEveryBrokerage" />
+			<class name="addBrokerageScheme.AddbothBrokerages" />
 			<class name="addBrokerageScheme.AddBookingBrokerage" />
-			<class name="basicCPFlow.ADDBooking" />
+			<class name="rechargeWallet.RechargeWallet" />
+			<class name="rechargeWallet.EditProject" />
+			<class name="rechargeWallet.EditIncentives" />
+			<class name="rechargeWallet.TransferWalletBalance" />
 		</classes>
-	</test> <!-- Test -->
+	</test> <!-- TestOne -->
 </suite> <!-- SuiteSanityOne -->

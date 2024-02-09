@@ -9,13 +9,12 @@ import pom.userActions.LoginPage;
 public class BookingActions extends BaseTest {
 
 	@Test
-	public void bookingActions() {
+	public void bookingCphActions() {
 		LoginPage logInPage = new LoginPage(driver);
 		logInPage.logIn(prop("cphPune"));
 		ActionsFromCph cphUser = new ActionsFromCph(driver);
 		cphUser.goToBookings();
 		cphUser.clickonbookingEllipsis();
 		cphUser.clickonBookingDetails();
-
 	}
 }

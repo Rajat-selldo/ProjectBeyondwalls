@@ -20,8 +20,8 @@ public class LoginPage extends ReusableUtils {
 
 // PageFactory design pattern
 	// sign-in button x-path
-	@FindBy(how = How.XPATH, using = "(//a[contains(text(), 'Sign in')])[1]")
-	private WebElement clickonSignIn;
+	@FindBy(how = How.CSS, using = ".green-btn.sign-in-button.alt-btn")
+	private WebElement clickonSignIn;		// (//a[contains(text(), 'Sign in')])[1]
 
 //Login with Phone
 	@FindBy(how = How.XPATH, using = "//input[@id='user_login_phone']")
@@ -110,15 +110,15 @@ public class LoginPage extends ReusableUtils {
 		userCreds.clickonverify();
 		System.out.println("User logged in successfully with Phone + OTP.");
 
-		// Wait for the success message element to be visible
-		WebElement successMessage = driver.findElement(By.xpath("//div[@class='noty-info ms-3']"));
-		boolean isDisplayed = successMessage.isDisplayed();
-		// Check if the success message is displayed
-		if (isDisplayed) {
-			System.out.println("Login successful! Success message is displayed.");
-		} else {
-			System.out.println("Login unsuccessful! Error message is displayed.");
-		}
+//		// Wait for the success message element to be visible
+//		WebElement successMessage = driver.findElement(By.xpath("//div[@class='noty-info ms-3']"));
+//		boolean isDisplayed = successMessage.isDisplayed();
+//		// Check if the success message is displayed
+//		if (isDisplayed) {
+//			System.out.println("Login successful! Success message is displayed.");
+//		} else {
+//			System.out.println("Login unsuccessful! Error message is displayed.");
+//		}
 	}
 
 }

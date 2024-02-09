@@ -2,7 +2,6 @@ package pom.userActions;
 
 import java.util.List;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -109,9 +108,7 @@ public class WalletRecharge extends ReusableUtils {
 
 //4. Edit Project	
 	@FindBy(how = How.XPATH, using = "(//a[contains(text(), 'Edit Project')])[1]")
-	private WebElement clickOnEditProject; // Xpath 2 - //div[@class='dropdown-menu dropdown-menu-right
-											// show']//a[@class='dropdown-item
-											// modal-remote-form-link'][normalize-space()='Edit Project']
+	private WebElement clickOnEditProject;
 
 	@FindBy(how = How.XPATH, using = "//a[normalize-space()='Wallet Notification Settings']")
 	private WebElement clickOnWalletNotifications;
@@ -212,7 +209,7 @@ public class WalletRecharge extends ReusableUtils {
 		waitUntilClickable(clickOnSave).click();
 		wait(2000);
 	}
-	
+
 	public void razorPayFlow() {
 		waitUntilClickable(selectNetbanking).click();
 
@@ -294,15 +291,4 @@ public class WalletRecharge extends ReusableUtils {
 		waitUntilClickable(selectInsuffucientBalance).click();
 	}
 
-	// Get Window Handles
-	public boolean SwitchToNextWindow(String windowTitle, List<String> hList) {
-		for (String e : hList) {
-			String title = driver.switchTo().window(e).getTitle();
-			if (title.contains(windowTitle)) {
-				System.out.println("Found the right window...");
-				return true;
-			}
-		}
-		return false;
-	}
 }

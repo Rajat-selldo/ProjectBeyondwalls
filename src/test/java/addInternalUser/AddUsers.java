@@ -20,12 +20,12 @@ public class AddUsers extends BaseTest {
 		addUser.enterLastName(Random("A", 6));
 		addUser.enterEmail("raj" + Random("AN", 8) + "@mailinator.com");
 		addUser.enterPhone("79" + Random("N", 8));
-		addUser.selectCity("Bangalore");
-		addUser.selectRegion("Basavanagudi");
+		addUser.selectCity("Pune");
+		addUser.selectRegion("wakad");
 
 		// Write a if else block for project selection method cause for some users field
 		// is not displayed on the form
-		addUser.selectProject("Demo");
+		addUser.selectProject("mal");
 		addUser.clickonSave();
 
 	}
