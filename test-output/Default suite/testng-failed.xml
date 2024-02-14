@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="cphActions.BookingActions">
+      <class name="interstedProject.InterestedProjects">
         <methods>
+          <include name="markProject"/>
           <include name="terminate"/>
           <include name="browserConfig"/>
-          <include name="bookingCphActions"/>
         </methods>
-      </class> <!-- cphActions.BookingActions -->
+      </class> <!-- interstedProject.InterestedProjects -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
