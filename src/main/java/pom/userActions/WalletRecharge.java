@@ -1,6 +1,7 @@
 package pom.userActions;
 
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -211,21 +212,22 @@ public class WalletRecharge extends ReusableUtils {
 	}
 
 	public void razorPayFlow() {
-		waitUntilClickable(selectNetbanking).click();
-
-//		// Handling payment window by using Get window Handles
-//		Set<String> handles = driver.getWindowHandles();
-//		List<String> hList = new ArrayList<String>(handles);
-//		if (SwitchToNextWindow("Launchpad", hList)) {
-//			System.out.println("Current Page URL - " + driver.getCurrentUrl() + " : " + driver.getTitle());
-//		}
-
-		wait(1000);
-		jsClick(selectBank);
 		wait(2000);
-		jsClick(clickOnPayNow);
-		wait(2000);
-
+		// Get all window handles
+		Set<String> windowHandles = driver.getWindowHandles();
+		// Iterate through each window handle
+		for (String windowHandle : windowHandles) {
+			driver.switchTo().window(windowHandle);
+			if (driver.getTitle().contains("Razorpay Checkout")) {
+				// Perform actions in Razorpay window
+				waitUntilClickable(selectNetbanking).click();
+				wait(1000);
+				waitUntilClickable(selectBank).click();
+				wait(2000);
+				waitUntilClickable(clickOnPayNow).click();
+				wait(5000);
+			}
+		}
 	}
 
 //2. Transfer Wallet Balance
