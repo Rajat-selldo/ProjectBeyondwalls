@@ -41,9 +41,11 @@ public class InterestedProject extends ReusableUtils {
 //		waitUntilClickable(clickonHeartIcon).click();
 //	}
 
-	// Either use clickonInterestedProjects or clickonHeartIcon
+	
+	// Either use clickonInterestedProjects or clickonHeartIcon 
 	public void clickonSubscribe(String subscribedProjectName) {
 		wait(2000);
+		driver.navigate().refresh();
 		WebElement subscribeProject = driver.findElement(By.xpath("//a[text()='" + subscribedProjectName
 				+ "']/ancestor::div[@class='project-inner-info']//a[@class='add-wishlist d-none d-sm-block']"));
 		scrollIntoView(subscribeProject);
@@ -56,7 +58,7 @@ public class InterestedProject extends ReusableUtils {
 		waitUntilClickable(clickonInterestedProjects).click();
 	}
 
-	// Temp project listing from Interested Projects
+	// Temp. project listing from Interested Projects
 	public void verifyInterestedProject() {
 		java.util.List<WebElement> projectList = driver
 				.findElements(By.xpath("//div[@class='single-prjt-list mb-4']//h2[@class='title']"));

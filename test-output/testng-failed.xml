@@ -1,89 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [SuiteSanityOne]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="pom.beyondwalls.utility.Listneers"/>
-    <listener class-name="pom.beyondwalls.utility.AnnotationTransformer"/>
-  </listeners>
-  <test thread-count="5" name="TestOne(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="basicCPFlow.SuiteOne">
-        <methods>
-          <include name="terminate"/>
-          <include name="addBooking"/>
-          <include name="browserConfig"/>
-        </methods>
-      </class> <!-- basicCPFlow.SuiteOne -->
-      <class name="addBrokerageScheme.AddbothBrokerages">
-        <methods>
-          <include name="terminate"/>
-          <include name="addbothBrokerages"/>
-          <include name="browserConfig"/>
-        </methods>
-      </class> <!-- addBrokerageScheme.AddbothBrokerages -->
-      <class name="addBrokerageScheme.AddWalkinBrokerage">
-        <methods>
-          <include name="addWalkinBrokerage"/>
-          <include name="terminate"/>
-          <include name="browserConfig"/>
-        </methods>
-      </class> <!-- addBrokerageScheme.AddWalkinBrokerage -->
-      <class name="checkingFilters.FiltersonBrokeragePage">
-        <methods>
-          <include name="terminate"/>
-          <include name="TC01"/>
-          <include name="browserConfig"/>
-        </methods>
-      </class> <!-- checkingFilters.FiltersonBrokeragePage -->
-      <class name="userApprovalsinCompany.UserInExistingCompany">
-        <methods>
-          <include name="terminate"/>
-          <include name="browserConfig"/>
-          <include name="approveCP"/>
-        </methods>
-      </class> <!-- userApprovalsinCompany.UserInExistingCompany -->
-      <class name="checkingFilters.FiltersonProjectPage">
-        <methods>
-          <include name="checkFilters"/>
-          <include name="terminate"/>
-          <include name="browserConfig"/>
-        </methods>
-      </class> <!-- checkingFilters.FiltersonProjectPage -->
-      <class name="checkingFilters.FiltersonWalkinPage">
-        <methods>
-          <include name="terminate"/>
-          <include name="browserConfig"/>
-          <include name="TC01"/>
-        </methods>
-      </class> <!-- checkingFilters.FiltersonWalkinPage -->
-      <class name="addBrokerageScheme.AddBookingBrokerage">
-        <methods>
-          <include name="terminate"/>
-          <include name="browserConfig"/>
-          <include name="addBookingBrokerage"/>
-        </methods>
-      </class> <!-- addBrokerageScheme.AddBookingBrokerage -->
-      <class name="addBrokerageScheme.AddSpotBrokerage">
-        <methods>
-          <include name="addSpotBrokerage"/>
-          <include name="terminate"/>
-          <include name="browserConfig"/>
-        </methods>
-      </class> <!-- addBrokerageScheme.AddSpotBrokerage -->
-      <class name="cpUserRegistration.CpOnboardingwithExisting">
-        <methods>
-          <include name="terminate"/>
-          <include name="cpOnboardingwithExisting"/>
-          <include name="browserConfig"/>
-        </methods>
-      </class> <!-- cpUserRegistration.CpOnboardingwithExisting -->
-      <class name="addBrokerageScheme.AddEveryBrokerage">
-        <methods>
-          <include name="terminate"/>
-          <include name="addEveryBrokerage"/>
-          <include name="browserConfig"/>
-        </methods>
-      </class> <!-- addBrokerageScheme.AddEveryBrokerage -->
       <class name="rechargeWallet.RechargeWallet">
         <methods>
           <include name="terminate"/>
@@ -92,5 +11,5 @@
         </methods>
       </class> <!-- rechargeWallet.RechargeWallet -->
     </classes>
-  </test> <!-- TestOne(failed) -->
-</suite> <!-- Failed suite [SuiteSanityOne] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
