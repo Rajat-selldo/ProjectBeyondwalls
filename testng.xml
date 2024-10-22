@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite_regression">
+  <test thread-count="5" name="Test1_bwportal">
+    <classes>
+      <class name="userLogIn.UserLogin"/>
+      <class name="basicCPFlow.SuiteOne"/>
+      <class name="addNewProject.AddNewProject"/>
+      <class name="rechargeWallet.EditProject"/>
+      <class name="rechargeWallet.EditIncentives"/>
+      <class name="rechargeWallet.RechargeWallet"/>
+      <class name="rechargeWallet.TransferWalletBalance"/>
+      <class name="addInternalUser.AddUsers"/>
+      <class name="cpUserRegistration.CpOnboardingwithExisting"/>
+      <class name="userApprovalsinCompany.UserInExistingCompany"/>
+      <class name="cpUserRegistration.CPuserRegistrationwithNewCompany"/>
+      <class name="userApprovalsinCompany.ApprovalofPartnerCompany"/>
+      <class name="dsmActions.WalkinActions"/>
+      <class name="dsmActions.BookingActions"/>
+      <class name="cphActions.WalkinActions"/>
+      <class name="cphActions.BookingActions"/>
+      <class name="addBrokerageScheme.AddWalkinBrokerage"/>
+      <class name="addBrokerageScheme.AddSpotBrokerage"/>
+      <class name="addBrokerageScheme.AddEveryBrokerage"/>
+      <class name="addBrokerageScheme.AddbothBrokerages"/>
+      <class name="addBrokerageScheme.AddBookingBrokerage"/>
+      <class name="checkingFilters.FiltersonProjectPage"/>
+      <class name="checkingFilters.FiltersonWalkinPage"/>
+      <class name="checkingFilters.FiltersonBookingPage"/>
+      <class name="checkingFilters.FiltersonBrokeragePage"/>
+    </classes>
+  </test> <!-- Test1_bwportal -->
+</suite> <!-- Suite_regression -->

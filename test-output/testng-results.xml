@@ -1,0 +1,1158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="30" passed="18" failed="12" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-22T11:59:36 IST" name="Regression" finished-at="2024-10-22T12:20:39 IST" duration-ms="1262932">
+    <groups>
+    </groups>
+    <test started-at="2024-10-22T11:59:36 IST" name="TestSuite" finished-at="2024-10-22T12:20:39 IST" duration-ms="1262932">
+      <class name="userApprovalsinCompany.ApprovalofPartnerCompany">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:userApprovalsinCompany.ApprovalofPartnerCompany@5aa9e4eb]" started-at="2024-10-22T12:10:06 IST" name="browserConfig" finished-at="2024-10-22T12:10:12 IST" duration-ms="6127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="approveCompany()[pri:0, instance:userApprovalsinCompany.ApprovalofPartnerCompany@5aa9e4eb]" started-at="2024-10-22T12:10:12 IST" name="approveCompany" finished-at="2024-10-22T12:10:59 IST" duration-ms="46839" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#channel_partner_event-selectized"}
+  (Session info: chrome=129.0.6668.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2edaa722c81b94ee533a503df5a549c6, findElement {using=css selector, value=#channel_partner_event-selectized}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Rajat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54196}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54196/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2edaa722c81b94ee533a503df5a549c6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#channel_partner_event-selectized"}
+  (Session info: chrome=129.0.6668.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2edaa722c81b94ee533a503df5a549c6, findElement {using=css selector, value=#channel_partner_event-selectized}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Rajat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54196}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54196/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2edaa722c81b94ee533a503df5a549c6
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.getWrappedElement(Unknown Source)
+at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212)
+at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:556)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)
+at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:702)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:462)
+at pom.beyondwalls.utility.ReusableUtils.scrollIntoView(ReusableUtils.java:477)
+at userApprovalinCompany.approvalofPartnerCompany.enterApplicationStatus(approvalofPartnerCompany.java:54)
+at userApprovalsinCompany.ApprovalofPartnerCompany.approveCompany(ApprovalofPartnerCompany.java:19)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approveCompany -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:userApprovalsinCompany.ApprovalofPartnerCompany@5aa9e4eb]" started-at="2024-10-22T12:10:59 IST" name="terminate" finished-at="2024-10-22T12:10:59 IST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- userApprovalsinCompany.ApprovalofPartnerCompany -->
+      <class name="rechargeWallet.EditIncentives">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:rechargeWallet.EditIncentives@10683d9d]" started-at="2024-10-22T12:08:49 IST" name="browserConfig" finished-at="2024-10-22T12:08:57 IST" duration-ms="8299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="TC03()[pri:0, instance:rechargeWallet.EditIncentives@10683d9d]" started-at="2024-10-22T12:08:57 IST" name="TC03" finished-at="2024-10-22T12:09:16 IST" duration-ms="19279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03 -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:rechargeWallet.EditIncentives@10683d9d]" started-at="2024-10-22T12:09:16 IST" name="terminate" finished-at="2024-10-22T12:09:16 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- rechargeWallet.EditIncentives -->
+      <class name="checkingFilters.FiltersonWalkinPage">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:checkingFilters.FiltersonWalkinPage@7e6f74c]" started-at="2024-10-22T12:01:47 IST" name="browserConfig" finished-at="2024-10-22T12:01:52 IST" duration-ms="5080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="TC01()[pri:0, instance:checkingFilters.FiltersonWalkinPage@7e6f74c]" started-at="2024-10-22T12:01:52 IST" name="TC01" finished-at="2024-10-22T12:02:17 IST" duration-ms="25482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01 -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:checkingFilters.FiltersonWalkinPage@7e6f74c]" started-at="2024-10-22T12:02:17 IST" name="terminate" finished-at="2024-10-22T12:02:18 IST" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- checkingFilters.FiltersonWalkinPage -->
+      <class name="addBrokerageScheme.AddbothBrokerages">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:addBrokerageScheme.AddbothBrokerages@682b2fa]" started-at="2024-10-22T12:12:51 IST" name="browserConfig" finished-at="2024-10-22T12:12:57 IST" duration-ms="6112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="addbothBrokerages()[pri:0, instance:addBrokerageScheme.AddbothBrokerages@682b2fa]" started-at="2024-10-22T12:12:57 IST" name="addbothBrokerages" finished-at="2024-10-22T12:13:15 IST" duration-ms="17409" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate option with index: 1
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 1
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:303)
+at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:179)
+at pom.userActions.addBrokerageScheme.selectResource(addBrokerageScheme.java:140)
+at addBrokerageScheme.AddbothBrokerages.addbothBrokerages(AddbothBrokerages.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addbothBrokerages -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:addBrokerageScheme.AddbothBrokerages@682b2fa]" started-at="2024-10-22T12:13:15 IST" name="terminate" finished-at="2024-10-22T12:13:15 IST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- addBrokerageScheme.AddbothBrokerages -->
+      <class name="addBrokerageScheme.AddSpotBrokerage">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:addBrokerageScheme.AddSpotBrokerage@7dcf94f8]" started-at="2024-10-22T12:14:08 IST" name="browserConfig" finished-at="2024-10-22T12:14:14 IST" duration-ms="5852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="addSpotBrokerage()[pri:0, instance:addBrokerageScheme.AddSpotBrokerage@7dcf94f8]" started-at="2024-10-22T12:14:14 IST" name="addSpotBrokerage" finished-at="2024-10-22T12:14:32 IST" duration-ms="17202" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate option with index: 1
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 1
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:303)
+at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:179)
+at pom.userActions.addBrokerageScheme.selectResource(addBrokerageScheme.java:140)
+at addBrokerageScheme.AddSpotBrokerage.addSpotBrokerage(AddSpotBrokerage.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addSpotBrokerage -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:addBrokerageScheme.AddSpotBrokerage@7dcf94f8]" started-at="2024-10-22T12:14:32 IST" name="terminate" finished-at="2024-10-22T12:14:32 IST" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- addBrokerageScheme.AddSpotBrokerage -->
+      <class name="checkingFilters.FiltersonBookingPage">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:checkingFilters.FiltersonBookingPage@6a78afa0]" started-at="2024-10-22T12:02:40 IST" name="browserConfig" finished-at="2024-10-22T12:02:45 IST" duration-ms="4894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="TC01()[pri:0, instance:checkingFilters.FiltersonBookingPage@6a78afa0]" started-at="2024-10-22T12:02:45 IST" name="TC01" finished-at="2024-10-22T12:03:26 IST" duration-ms="41730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01 -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:checkingFilters.FiltersonBookingPage@6a78afa0]" started-at="2024-10-22T12:03:26 IST" name="terminate" finished-at="2024-10-22T12:03:27 IST" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- checkingFilters.FiltersonBookingPage -->
+      <class name="addBrokerageScheme.AddWalkinBrokerage">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:addBrokerageScheme.AddWalkinBrokerage@dd05255]" started-at="2024-10-22T12:02:18 IST" name="browserConfig" finished-at="2024-10-22T12:02:24 IST" duration-ms="6384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="addWalkinBrokerage()[pri:0, instance:addBrokerageScheme.AddWalkinBrokerage@dd05255]" started-at="2024-10-22T12:02:24 IST" name="addWalkinBrokerage" finished-at="2024-10-22T12:02:40 IST" duration-ms="15752" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate option with index: 1
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 1
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:303)
+at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:179)
+at pom.userActions.addBrokerageScheme.selectResource(addBrokerageScheme.java:140)
+at addBrokerageScheme.AddWalkinBrokerage.addWalkinBrokerage(AddWalkinBrokerage.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addWalkinBrokerage -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:addBrokerageScheme.AddWalkinBrokerage@dd05255]" started-at="2024-10-22T12:02:40 IST" name="terminate" finished-at="2024-10-22T12:02:40 IST" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- addBrokerageScheme.AddWalkinBrokerage -->
+      <class name="checkingFilters.FiltersonBrokeragePage">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:checkingFilters.FiltersonBrokeragePage@6743e411]" started-at="2024-10-22T12:16:49 IST" name="browserConfig" finished-at="2024-10-22T12:16:56 IST" duration-ms="7132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="TC01()[pri:0, instance:checkingFilters.FiltersonBrokeragePage@6743e411]" started-at="2024-10-22T12:16:56 IST" name="TC01" finished-at="2024-10-22T12:17:20 IST" duration-ms="24063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01 -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:checkingFilters.FiltersonBrokeragePage@6743e411]" started-at="2024-10-22T12:17:20 IST" name="terminate" finished-at="2024-10-22T12:17:21 IST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- checkingFilters.FiltersonBrokeragePage -->
+      <class name="userApprovalsinCompany.UserInExistingCompany">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:userApprovalsinCompany.UserInExistingCompany@662ac478]" started-at="2024-10-22T12:16:08 IST" name="browserConfig" finished-at="2024-10-22T12:16:10 IST" duration-ms="1392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="approveCP()[pri:0, instance:userApprovalsinCompany.UserInExistingCompany@662ac478]" started-at="2024-10-22T12:16:10 IST" name="approveCP" finished-at="2024-10-22T12:16:49 IST" duration-ms="39368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approveCP -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:userApprovalsinCompany.UserInExistingCompany@662ac478]" started-at="2024-10-22T12:16:49 IST" name="terminate" finished-at="2024-10-22T12:16:49 IST" duration-ms="212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- userApprovalsinCompany.UserInExistingCompany -->
+      <class name="dsmActions.WalkinActions">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:dsmActions.WalkinActions@31190526]" started-at="2024-10-22T12:15:27 IST" name="browserConfig" finished-at="2024-10-22T12:15:33 IST" duration-ms="6225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="walkinActions()[pri:0, instance:dsmActions.WalkinActions@31190526]" started-at="2024-10-22T12:15:33 IST" name="walkinActions" finished-at="2024-10-22T12:16:08 IST" duration-ms="34781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- walkinActions -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:dsmActions.WalkinActions@31190526]" started-at="2024-10-22T12:16:08 IST" name="terminate" finished-at="2024-10-22T12:16:08 IST" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- dsmActions.WalkinActions -->
+      <class name="dsmActions.BookingActions">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:dsmActions.BookingActions@44c03695]" started-at="2024-10-22T12:01:27 IST" name="browserConfig" finished-at="2024-10-22T12:01:33 IST" duration-ms="5338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="bookingDsmActions()[pri:0, instance:dsmActions.BookingActions@44c03695]" started-at="2024-10-22T12:01:33 IST" name="bookingDsmActions" finished-at="2024-10-22T12:01:47 IST" duration-ms="13925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookingDsmActions -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:dsmActions.BookingActions@44c03695]" started-at="2024-10-22T12:01:47 IST" name="terminate" finished-at="2024-10-22T12:01:47 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- dsmActions.BookingActions -->
+      <class name="test01.FlowOne">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:test01.FlowOne@2f4948e4]" started-at="2024-10-22T12:03:27 IST" name="browserConfig" finished-at="2024-10-22T12:03:34 IST" duration-ms="7610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="addBooking()[pri:0, instance:test01.FlowOne@2f4948e4]" started-at="2024-10-22T12:03:34 IST" name="addBooking" finished-at="2024-10-22T12:06:38 IST" duration-ms="183453" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[java.util.concurrent.TimeoutException
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9eac6bf601b26a683c7406f8fdd1e927, clickElement {id=f.CAE965024AB0BB7E59B17DBEF57AA361.d.E2D7E117834F1F8580311C53D538B0E5.e.28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Rajat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53777}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53777/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9eac6bf601b26a683c7406f8fdd1e927)] -> xpath: //input[@value='Verify your Account']]
+Session ID: 9eac6bf601b26a683c7406f8fdd1e927]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9eac6bf601b26a683c7406f8fdd1e927, clickElement {id=f.CAE965024AB0BB7E59B17DBEF57AA361.d.E2D7E117834F1F8580311C53D538B0E5.e.28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Rajat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53777}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53777/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9eac6bf601b26a683c7406f8fdd1e927)] -> xpath: //input[@value='Verify your Account']]
+Session ID: 9eac6bf601b26a683c7406f8fdd1e927
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:402)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:358)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+at pom.userActions.LoginPage.clickonverify(LoginPage.java:72)
+at test01.FlowOne.logIn(FlowOne.java:25)
+at test01.FlowOne.addWalkIn(FlowOne.java:38)
+at test01.FlowOne.addBooking(FlowOne.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:385)
+... 43 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBooking -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:test01.FlowOne@2f4948e4]" started-at="2024-10-22T12:06:38 IST" name="terminate" finished-at="2024-10-22T12:06:59 IST" duration-ms="21046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:test01.FlowOne@2f4948e4]" started-at="2024-10-22T12:06:59 IST" name="browserConfig" finished-at="2024-10-22T12:07:05 IST" duration-ms="6381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="addWalkIn()[pri:0, instance:test01.FlowOne@2f4948e4]" started-at="2024-10-22T12:07:05 IST" name="addWalkIn" finished-at="2024-10-22T12:07:44 IST" duration-ms="38635" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [479538859cc8b6a9aa31137ac3882f0d, clickElement {id=f.CF73A556344C0685D8E3DE72EBBDAF68.d.795A468636204FE0D35A45C522687AAD.e.183}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Rajat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53874}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53874/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (479538859cc8b6a9aa31137ac3882f0d)] -> xpath: //div[@data-default-date='22/10/2024 ']//span[@data-action='selectMonth']]
+Session ID: 479538859cc8b6a9aa31137ac3882f0d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [479538859cc8b6a9aa31137ac3882f0d, clickElement {id=f.CF73A556344C0685D8E3DE72EBBDAF68.d.795A468636204FE0D35A45C522687AAD.e.183}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Rajat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53874}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53874/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (479538859cc8b6a9aa31137ac3882f0d)] -> xpath: //div[@data-default-date='22/10/2024 ']//span[@data-action='selectMonth']]
+Session ID: 479538859cc8b6a9aa31137ac3882f0d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at pom.userActions.AddWalkin.datePicker(AddWalkin.java:152)
+at test01.FlowOne.addWalkIn(FlowOne.java:54)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addWalkIn -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:test01.FlowOne@2f4948e4]" started-at="2024-10-22T12:07:44 IST" name="terminate" finished-at="2024-10-22T12:07:44 IST" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:test01.FlowOne@2f4948e4]" started-at="2024-10-22T12:07:44 IST" name="browserConfig" finished-at="2024-10-22T12:07:50 IST" duration-ms="5485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="logIn()[pri:0, instance:test01.FlowOne@2f4948e4]" started-at="2024-10-22T12:07:50 IST" name="logIn" finished-at="2024-10-22T12:08:12 IST" duration-ms="22058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logIn -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:test01.FlowOne@2f4948e4]" started-at="2024-10-22T12:08:12 IST" name="terminate" finished-at="2024-10-22T12:08:12 IST" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- test01.FlowOne -->
+      <class name="cpUserRegistration.CpOnboardingwithExisting">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:cpUserRegistration.CpOnboardingwithExisting@385c9627]" started-at="2024-10-22T12:11:52 IST" name="browserConfig" finished-at="2024-10-22T12:12:00 IST" duration-ms="7632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="cpOnboardingwithExisting()[pri:0, instance:cpUserRegistration.CpOnboardingwithExisting@385c9627]" started-at="2024-10-22T12:12:00 IST" name="cpOnboardingwithExisting" finished-at="2024-10-22T12:12:27 IST" duration-ms="27226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cpOnboardingwithExisting -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:cpUserRegistration.CpOnboardingwithExisting@385c9627]" started-at="2024-10-22T12:12:27 IST" name="terminate" finished-at="2024-10-22T12:12:27 IST" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- cpUserRegistration.CpOnboardingwithExisting -->
+      <class name="rechargeWallet.EditProject">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:rechargeWallet.EditProject@f5958c9]" started-at="2024-10-22T12:19:46 IST" name="browserConfig" finished-at="2024-10-22T12:19:54 IST" duration-ms="7594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="TC04()[pri:0, instance:rechargeWallet.EditProject@f5958c9]" started-at="2024-10-22T12:19:54 IST" name="TC04" finished-at="2024-10-22T12:20:12 IST" duration-ms="17756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC04 -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:rechargeWallet.EditProject@f5958c9]" started-at="2024-10-22T12:20:12 IST" name="terminate" finished-at="2024-10-22T12:20:12 IST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- rechargeWallet.EditProject -->
+      <class name="cphActions.WalkinActions">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:cphActions.WalkinActions@3eb25e1a]" started-at="2024-10-22T12:17:21 IST" name="browserConfig" finished-at="2024-10-22T12:17:27 IST" duration-ms="6384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="walkinActions()[pri:0, instance:cphActions.WalkinActions@3eb25e1a]" started-at="2024-10-22T12:17:27 IST" name="walkinActions" finished-at="2024-10-22T12:17:41 IST" duration-ms="14036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- walkinActions -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:cphActions.WalkinActions@3eb25e1a]" started-at="2024-10-22T12:17:41 IST" name="terminate" finished-at="2024-10-22T12:17:41 IST" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- cphActions.WalkinActions -->
+      <class name="rechargeWallet.TransferWalletBalance">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:rechargeWallet.TransferWalletBalance@477b4cdf]" started-at="2024-10-22T12:17:41 IST" name="browserConfig" finished-at="2024-10-22T12:17:48 IST" duration-ms="6460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="TC02()[pri:0, instance:rechargeWallet.TransferWalletBalance@477b4cdf]" started-at="2024-10-22T12:17:48 IST" name="TC02" finished-at="2024-10-22T12:18:06 IST" duration-ms="18552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02 -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:rechargeWallet.TransferWalletBalance@477b4cdf]" started-at="2024-10-22T12:18:06 IST" name="terminate" finished-at="2024-10-22T12:18:07 IST" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- rechargeWallet.TransferWalletBalance -->
+      <class name="basicCPFlow.SuiteOne">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:basicCPFlow.SuiteOne@3fc2959f]" started-at="2024-10-22T12:09:16 IST" name="browserConfig" finished-at="2024-10-22T12:09:22 IST" duration-ms="6032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="addBooking()[pri:0, instance:basicCPFlow.SuiteOne@3fc2959f]" started-at="2024-10-22T12:09:22 IST" name="addBooking" finished-at="2024-10-22T12:10:05 IST" duration-ms="42900" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [551df067d0f492dff5ef6ffae16e6c79, clickElement {id=f.EA45A9D9082C8A7C5944EE77B5ED0C89.d.2A8FF1D448B357AEECB254BFB9038314.e.242}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Rajat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54128}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54128/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (551df067d0f492dff5ef6ffae16e6c79)] -> xpath: //div[@data-default-date='22/10/2024 ']//td[@data-day='10/10/2024']]
+Session ID: 551df067d0f492dff5ef6ffae16e6c79]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [551df067d0f492dff5ef6ffae16e6c79, clickElement {id=f.EA45A9D9082C8A7C5944EE77B5ED0C89.d.2A8FF1D448B357AEECB254BFB9038314.e.242}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Rajat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54128}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54128/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (551df067d0f492dff5ef6ffae16e6c79)] -> xpath: //div[@data-default-date='22/10/2024 ']//td[@data-day='10/10/2024']]
+Session ID: 551df067d0f492dff5ef6ffae16e6c79
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at pom.userActions.AddWalkin.datePicker(AddWalkin.java:156)
+at basicCPFlow.SuiteOne.addWalkIn(SuiteOne.java:27)
+at basicCPFlow.SuiteOne.conductWalkin(SuiteOne.java:33)
+at basicCPFlow.SuiteOne.addBooking(SuiteOne.java:44)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBooking -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:basicCPFlow.SuiteOne@3fc2959f]" started-at="2024-10-22T12:10:05 IST" name="terminate" finished-at="2024-10-22T12:10:06 IST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- basicCPFlow.SuiteOne -->
+      <class name="userLogIn.UserLogin">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:userLogIn.UserLogin@229f66ed]" started-at="2024-10-22T12:14:32 IST" name="browserConfig" finished-at="2024-10-22T12:14:38 IST" duration-ms="6043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="logIn()[pri:0, instance:userLogIn.UserLogin@229f66ed]" started-at="2024-10-22T12:14:38 IST" name="logIn" finished-at="2024-10-22T12:15:27 IST" duration-ms="49075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logIn -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:userLogIn.UserLogin@229f66ed]" started-at="2024-10-22T12:15:27 IST" name="terminate" finished-at="2024-10-22T12:15:27 IST" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- userLogIn.UserLogin -->
+      <class name="addBrokerageScheme.AddBookingBrokerage">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:addBrokerageScheme.AddBookingBrokerage@233795b6]" started-at="2024-10-22T12:20:12 IST" name="browserConfig" finished-at="2024-10-22T12:20:18 IST" duration-ms="6465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="addBookingBrokerage()[pri:0, instance:addBrokerageScheme.AddBookingBrokerage@233795b6]" started-at="2024-10-22T12:20:18 IST" name="addBookingBrokerage" finished-at="2024-10-22T12:20:39 IST" duration-ms="20422" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate option with index: 1
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 1
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:303)
+at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:179)
+at pom.userActions.addBrokerageScheme.selectResource(addBrokerageScheme.java:140)
+at addBrokerageScheme.AddBookingBrokerage.addBookingBrokerage(AddBookingBrokerage.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBookingBrokerage -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:addBrokerageScheme.AddBookingBrokerage@233795b6]" started-at="2024-10-22T12:20:39 IST" name="terminate" finished-at="2024-10-22T12:20:39 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- addBrokerageScheme.AddBookingBrokerage -->
+      <class name="cphActions.BookingActions">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:cphActions.BookingActions@139982de]" started-at="2024-10-22T12:12:27 IST" name="browserConfig" finished-at="2024-10-22T12:12:35 IST" duration-ms="8015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="bookingCphActions()[pri:0, instance:cphActions.BookingActions@139982de]" started-at="2024-10-22T12:12:35 IST" name="bookingCphActions" finished-at="2024-10-22T12:12:51 IST" duration-ms="15616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookingCphActions -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:cphActions.BookingActions@139982de]" started-at="2024-10-22T12:12:51 IST" name="terminate" finished-at="2024-10-22T12:12:51 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- cphActions.BookingActions -->
+      <class name="cpUserRegistration.CPuserRegistrationwithNewCompany">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:cpUserRegistration.CPuserRegistrationwithNewCompany@217ed35e]" started-at="2024-10-22T12:13:15 IST" name="browserConfig" finished-at="2024-10-22T12:13:21 IST" duration-ms="5894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="cpOnboardingwithNew()[pri:0, instance:cpUserRegistration.CPuserRegistrationwithNewCompany@217ed35e]" started-at="2024-10-22T12:13:21 IST" name="cpOnboardingwithNew" finished-at="2024-10-22T12:14:08 IST" duration-ms="47499" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidArgumentException">
+            <message>
+              <![CDATA[invalid argument: File not found : D://Automation//SendToAniket.zip_expanded//com.beyondwalls//Test Documents//bld1.jpg
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c2e2cd5ef359e22c7b30a9961e9dc434, sendKeysToElement {id=f.4DCD6896A4605D22230B4623DEC78CAD.d.5F6358E92D8FCDE2E3458D1453FD1507.e.211, value=[Ljava.lang.CharSequence;@3b21b0f5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Rajat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54530}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54530/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c2e2cd5ef359e22c7b30a9961e9dc434)] -> css selector: input[name='files[]']]
+Session ID: c2e2cd5ef359e22c7b30a9961e9dc434]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D://Automation//SendToAniket.zip_expanded//com.beyondwalls//Test Documents//bld1.jpg
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c2e2cd5ef359e22c7b30a9961e9dc434, sendKeysToElement {id=f.4DCD6896A4605D22230B4623DEC78CAD.d.5F6358E92D8FCDE2E3458D1453FD1507.e.211, value=[Ljava.lang.CharSequence;@3b21b0f5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Rajat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54530}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54530/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c2e2cd5ef359e22c7b30a9961e9dc434)] -> css selector: input[name='files[]']]
+Session ID: c2e2cd5ef359e22c7b30a9961e9dc434
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
+at pom.userActions.Cpregistration.uploads(Cpregistration.java:338)
+at cpUserRegistration.CPuserRegistrationwithNewCompany.cpOnboardingwithNew(CPuserRegistrationwithNewCompany.java:78)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cpOnboardingwithNew -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:cpUserRegistration.CPuserRegistrationwithNewCompany@217ed35e]" started-at="2024-10-22T12:14:08 IST" name="terminate" finished-at="2024-10-22T12:14:08 IST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- cpUserRegistration.CPuserRegistrationwithNewCompany -->
+      <class name="rechargeWallet.RechargeWallet">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:rechargeWallet.RechargeWallet@6989da5e]" started-at="2024-10-22T12:10:59 IST" name="browserConfig" finished-at="2024-10-22T12:11:06 IST" duration-ms="6807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="rechargeProjectWallet()[pri:0, instance:rechargeWallet.RechargeWallet@6989da5e]" started-at="2024-10-22T12:11:06 IST" name="rechargeProjectWallet" finished-at="2024-10-22T12:11:52 IST" duration-ms="46636" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: button[method='netbanking']' (tried for 5 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: button[method='netbanking']' (tried for 5 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pom.beyondwalls.utility.ReusableUtils.waitUntilClickable(ReusableUtils.java:219)
+at pom.userActions.WalletRecharge.razorPayFlow(WalletRecharge.java:214)
+at rechargeWallet.RechargeWallet.rechargeProjectWallet(RechargeWallet.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"button[method='netbanking']"}
+  (Session info: chrome=129.0.6668.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [33eda4379e2972ac58e3e9bd8e40f009, findElement {using=css selector, value=button[method='netbanking']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Rajat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54252}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54252/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 33eda4379e2972ac58e3e9bd8e40f009
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rechargeProjectWallet -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:rechargeWallet.RechargeWallet@6989da5e]" started-at="2024-10-22T12:11:52 IST" name="terminate" finished-at="2024-10-22T12:11:52 IST" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- rechargeWallet.RechargeWallet -->
+      <class name="addBrokerageScheme.AddEveryBrokerage">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:addBrokerageScheme.AddEveryBrokerage@411f53a0]" started-at="2024-10-22T11:59:36 IST" name="browserConfig" finished-at="2024-10-22T11:59:50 IST" duration-ms="14153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="addEveryBrokerage()[pri:0, instance:addBrokerageScheme.AddEveryBrokerage@411f53a0]" started-at="2024-10-22T11:59:50 IST" name="addEveryBrokerage" finished-at="2024-10-22T12:00:35 IST" duration-ms="44230" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (7aeaf3eee020f1826cb0c4e9a5b404be)] -> xpath: //input[@id='incentive_scheme_name']] (tried for 5 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (7aeaf3eee020f1826cb0c4e9a5b404be)] -> xpath: //input[@id='incentive_scheme_name']] (tried for 5 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pom.beyondwalls.utility.ReusableUtils.waitUntilVisiblity(ReusableUtils.java:163)
+at pom.userActions.addBrokerageScheme.enterSchemeName(addBrokerageScheme.java:101)
+at addBrokerageScheme.AddEveryBrokerage.addEveryBrokerage(AddEveryBrokerage.java:19)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='incentive_scheme_name']"}
+  (Session info: chrome=129.0.6668.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7aeaf3eee020f1826cb0c4e9a5b404be, findElement {using=xpath, value=//input[@id='incentive_scheme_name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Rajat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53382}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53382/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7aeaf3eee020f1826cb0c4e9a5b404be
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEveryBrokerage -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:addBrokerageScheme.AddEveryBrokerage@411f53a0]" started-at="2024-10-22T12:00:35 IST" name="terminate" finished-at="2024-10-22T12:00:35 IST" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- addBrokerageScheme.AddEveryBrokerage -->
+      <class name="addNewProject.AddNewProject">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:addNewProject.AddNewProject@6150c3ec]" started-at="2024-10-22T12:00:35 IST" name="browserConfig" finished-at="2024-10-22T12:00:41 IST" duration-ms="6180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="addProject()[pri:0, instance:addNewProject.AddNewProject@6150c3ec]" started-at="2024-10-22T12:00:41 IST" name="addProject" finished-at="2024-10-22T12:01:27 IST" duration-ms="46155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProject -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:addNewProject.AddNewProject@6150c3ec]" started-at="2024-10-22T12:01:27 IST" name="terminate" finished-at="2024-10-22T12:01:27 IST" duration-ms="216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- addNewProject.AddNewProject -->
+      <class name="checkingFilters.FiltersonProjectPage">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:checkingFilters.FiltersonProjectPage@77c2494c]" started-at="2024-10-22T12:18:07 IST" name="browserConfig" finished-at="2024-10-22T12:18:14 IST" duration-ms="7968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="checkFilters()[pri:0, instance:checkingFilters.FiltersonProjectPage@77c2494c]" started-at="2024-10-22T12:18:14 IST" name="checkFilters" finished-at="2024-10-22T12:18:44 IST" duration-ms="29841" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (ff261f5db0563afbae2d0d32e1ed8bc6)] -> xpath: //input[@id='fltrs_possession']] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Rajat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55074}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55074/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ff261f5db0563afbae2d0d32e1ed8bc6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (ff261f5db0563afbae2d0d32e1ed8bc6)] -> xpath: //input[@id='fltrs_possession']] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Rajat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55074}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55074/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ff261f5db0563afbae2d0d32e1ed8bc6
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pom.beyondwalls.utility.ReusableUtils.waitUntilClickable(ReusableUtils.java:219)
+at pom.userActions.FiltersonProjectListing.enterpossessionDate(FiltersonProjectListing.java:126)
+at checkingFilters.FiltersonProjectPage.checkFilters(FiltersonProjectPage.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFilters -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:checkingFilters.FiltersonProjectPage@77c2494c]" started-at="2024-10-22T12:18:44 IST" name="terminate" finished-at="2024-10-22T12:18:44 IST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:checkingFilters.FiltersonProjectPage@77c2494c]" started-at="2024-10-22T12:18:44 IST" name="browserConfig" finished-at="2024-10-22T12:18:51 IST" duration-ms="6759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="checkInactiveProjects()[pri:0, instance:checkingFilters.FiltersonProjectPage@77c2494c]" started-at="2024-10-22T12:18:51 IST" name="checkInactiveProjects" finished-at="2024-10-22T12:19:17 IST" duration-ms="25623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkInactiveProjects -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:checkingFilters.FiltersonProjectPage@77c2494c]" started-at="2024-10-22T12:19:17 IST" name="terminate" finished-at="2024-10-22T12:19:17 IST" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:checkingFilters.FiltersonProjectPage@77c2494c]" started-at="2024-10-22T12:19:17 IST" name="browserConfig" finished-at="2024-10-22T12:19:24 IST" duration-ms="7186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="checkPossessionDate()[pri:0, instance:checkingFilters.FiltersonProjectPage@77c2494c]" started-at="2024-10-22T12:19:24 IST" name="checkPossessionDate" finished-at="2024-10-22T12:19:46 IST" duration-ms="21975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPossessionDate -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:checkingFilters.FiltersonProjectPage@77c2494c]" started-at="2024-10-22T12:19:46 IST" name="terminate" finished-at="2024-10-22T12:19:46 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- checkingFilters.FiltersonProjectPage -->
+      <class name="addInternalUser.AddUsers">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:addInternalUser.AddUsers@1f2586d6]" started-at="2024-10-22T12:08:12 IST" name="browserConfig" finished-at="2024-10-22T12:08:18 IST" duration-ms="5715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="addUsers()[pri:0, instance:addInternalUser.AddUsers@1f2586d6]" started-at="2024-10-22T12:08:18 IST" name="addUsers" finished-at="2024-10-22T12:08:48 IST" duration-ms="30874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUsers -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:addInternalUser.AddUsers@1f2586d6]" started-at="2024-10-22T12:08:48 IST" name="terminate" finished-at="2024-10-22T12:08:49 IST" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- addInternalUser.AddUsers -->
+    </test> <!-- TestSuite -->
+  </suite> <!-- Regression -->
+</testng-results>
