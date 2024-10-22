@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="27" passed="12" failed="10" skipped="5">
   <reporter-output>
@@ -1639,3 +1640,30 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
     </test> <!-- Test1_bwportal -->
   </suite> <!-- Suite_regression -->
 </testng-results>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-16T10:52:35 IST" name="Default suite" finished-at="2024-02-16T10:53:27 IST" duration-ms="52611">
+    <groups>
+    </groups>
+    <test started-at="2024-02-16T10:52:35 IST" name="Default test" finished-at="2024-02-16T10:53:27 IST" duration-ms="52611">
+      <class name="rechargeWallet.RechargeWallet">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:rechargeWallet.RechargeWallet@3eb738bb]" started-at="2024-02-16T10:52:35 IST" name="browserConfig" finished-at="2024-02-16T10:52:39 IST" duration-ms="4091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="rechargeProjectWallet()[pri:0, instance:rechargeWallet.RechargeWallet@3eb738bb]" started-at="2024-02-16T10:52:39 IST" name="rechargeProjectWallet" finished-at="2024-02-16T10:53:27 IST" duration-ms="48280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rechargeProjectWallet -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:rechargeWallet.RechargeWallet@3eb738bb]" started-at="2024-02-16T10:53:27 IST" name="terminate" finished-at="2024-02-16T10:53:27 IST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- rechargeWallet.RechargeWallet -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
+>>>>>>> fbf0784c9d624aba152f25b979385bd39ebb29c6

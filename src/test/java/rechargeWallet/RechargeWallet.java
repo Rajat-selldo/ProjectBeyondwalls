@@ -20,6 +20,8 @@ public class RechargeWallet extends BaseTest {
 		recharge.selectPaymentMode("Online");
 		recharge.enterCampaignFrom("03/03/2040");	//Change when u run the suite 
 		recharge.enterCampaignTo("04/03/2040");		//Change when u run the suite 
+		recharge.enterCampaignFrom("11/03/2040");	//Change when u run the suite 
+		recharge.enterCampaignTo("12/03/2040");		//Change when u run the suite 
 		recharge.enterSvCount("1");
 		recharge.enterSvIncentive("100");
 		recharge.enterSbCount("1");

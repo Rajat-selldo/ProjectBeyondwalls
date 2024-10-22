@@ -24,7 +24,9 @@ public class SuiteOne extends BaseTest {
 		addWalkinForm.enterWalkinEmail("raj" + Random("A", 10) + "@mailinator.com");
 		addWalkinForm.enterWalkinPhone("7" + Random("N", 9));
 		addWalkinForm.selectProject("Sommet (Pune)");
+
 		addWalkinForm.datePicker("10/07/2024", "12:30");
+		addWalkinForm.datePicker("10/02/2024", "04:30");
 		addWalkinForm.clickonSave();
 		System.out.println("Walkin added successfully.");
 	}
